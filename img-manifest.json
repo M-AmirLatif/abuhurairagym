@@ -1,0 +1,379 @@
+[
+  {
+    "path": "images/mainheroimgs/AABkmLep7Rzq1E1QWAXspczGXJigD96IKf4iw4KaWttRJ4IO7jKI1MEiUn1tisFjfi3pdwqYENvyojt9SrCKXwrO62-xih_vGAGG4d0PcvUxMJGEwVyEzNaQbaxRXy7pXNJzj8FvzTaJw1076-h852-k-no.jpg",
+    "subfolder": "mainheroimgs",
+    "description": "Coach Abu Huraira standing inside the gym with three athletic members and trainers on the green mat workout floor.",
+    "flags": [
+      "primary_hero_candidate"
+    ],
+    "usable": true,
+    "recommended_use": "Hero section / About section",
+    "width": 1076,
+    "height": 852,
+    "aspect_ratio": 1.26,
+    "file_size_bytes": 291466,
+    "file_size_kb": 284.6
+  },
+  {
+    "path": "images/logo/452110603_122101957106379320_277801087180745032_n.jpg",
+    "subfolder": "logo",
+    "description": "Facebook promotional cover banner with stock bodybuilder photo and gym text/phone overlay; not an actual vector or transparent logo.",
+    "flags": [
+      "stock_photo",
+      "banner_graphic",
+      "not_a_logo"
+    ],
+    "usable": false,
+    "recommended_use": "Do NOT use; build premium typographic wordmark instead",
+    "width": 1640,
+    "height": 924,
+    "aspect_ratio": 1.77,
+    "file_size_bytes": 130895,
+    "file_size_kb": 127.8
+  },
+  {
+    "path": "images/bodybuildingimgs/474639003_122141920346379320_3147451012402993457_n.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "Social media story screenshot with UI overlay showing Mr. Kasur championship stage with sponsor banners.",
+    "flags": [
+      "screenshot",
+      "ui_overlay",
+      "sponsor_banner"
+    ],
+    "usable": false,
+    "recommended_use": "Archive only",
+    "width": 540,
+    "height": 1200,
+    "aspect_ratio": 0.45,
+    "file_size_bytes": 91305,
+    "file_size_kb": 89.2
+  },
+  {
+    "path": "images/bodybuildingimgs/474820004_122141920412379320_2574315934763153350_n.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "Coach Abu Huraira standing beside Mr. Kasur Physique champion presenting 50,000 PKR grand prize check and trophy surrounded by gym supporters.",
+    "flags": [
+      "sponsor_check"
+    ],
+    "usable": true,
+    "recommended_use": "Achievements / Legacy gallery",
+    "width": 2048,
+    "height": 2048,
+    "aspect_ratio": 1.0,
+    "file_size_bytes": 354191,
+    "file_size_kb": 345.9
+  },
+  {
+    "path": "images/bodybuildingimgs/474889234_122141920886379320_9089735124631131284_n.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "Mobile livestream screenshot with UI buttons and reactions of an athlete posing on stage.",
+    "flags": [
+      "screenshot",
+      "ui_overlay"
+    ],
+    "usable": false,
+    "recommended_use": "Archive only",
+    "width": 1080,
+    "height": 2340,
+    "aspect_ratio": 0.46,
+    "file_size_bytes": 160374,
+    "file_size_kb": 156.6
+  },
+  {
+    "path": "images/bodybuildingimgs/474977254_122141920214379320_2595741835629026678_n.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "WhatsApp story screenshot with reply bar showing tan bodybuilder with friends.",
+    "flags": [
+      "screenshot",
+      "ui_overlay",
+      "duplicate_scene"
+    ],
+    "usable": false,
+    "recommended_use": "Archive only (use 475256322 uncropped original instead)",
+    "width": 540,
+    "height": 1200,
+    "aspect_ratio": 0.45,
+    "file_size_bytes": 52496,
+    "file_size_kb": 51.3
+  },
+  {
+    "path": "images/bodybuildingimgs/475117580_122141920172379320_3576769550265215300_n - Copy.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "WhatsApp story screenshot of bodybuilders backstage with electronics store banner.",
+    "flags": [
+      "screenshot",
+      "ui_overlay",
+      "sponsor_banner"
+    ],
+    "usable": false,
+    "recommended_use": "Archive only",
+    "width": 540,
+    "height": 1200,
+    "aspect_ratio": 0.45,
+    "file_size_bytes": 93138,
+    "file_size_kb": 91.0
+  },
+  {
+    "path": "images/bodybuildingimgs/475119890_122141920454379320_327730677137411724_n - Copy.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "Clean high-resolution photo of bodybuilder with competition tan flexing abs alongside peers.",
+    "flags": [
+      "sponsor_background"
+    ],
+    "usable": true,
+    "recommended_use": "Athletes / Gallery",
+    "width": 1200,
+    "height": 1200,
+    "aspect_ratio": 1.0,
+    "file_size_bytes": 309936,
+    "file_size_kb": 302.7
+  },
+  {
+    "path": "images/bodybuildingimgs/475123425_122141920976379320_2973865119662642925_n - Copy.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "Bodybuilder posing on stage in front of event sponsor boards.",
+    "flags": [
+      "sponsor_banner",
+      "low_light"
+    ],
+    "usable": false,
+    "recommended_use": "Archive only",
+    "width": 1080,
+    "height": 813,
+    "aspect_ratio": 1.33,
+    "file_size_bytes": 94073,
+    "file_size_kb": 91.9
+  },
+  {
+    "path": "images/bodybuildingimgs/475207967_122141921204379320_7143639104374591863_n.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "Mobile screenshot of Facebook profile showing bodybuilder posing.",
+    "flags": [
+      "screenshot",
+      "ui_overlay"
+    ],
+    "usable": false,
+    "recommended_use": "Archive only",
+    "width": 1080,
+    "height": 2340,
+    "aspect_ratio": 0.46,
+    "file_size_bytes": 224991,
+    "file_size_kb": 219.7
+  },
+  {
+    "path": "images/bodybuildingimgs/475237019_122141921006379320_5337545402044206479_n.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "Mobile screenshot with notification popup and caption showing bodybuilders.",
+    "flags": [
+      "screenshot",
+      "ui_overlay"
+    ],
+    "usable": false,
+    "recommended_use": "Archive only",
+    "width": 540,
+    "height": 1200,
+    "aspect_ratio": 0.45,
+    "file_size_bytes": 93837,
+    "file_size_kb": 91.6
+  },
+  {
+    "path": "images/bodybuildingimgs/475256322_122141920820379320_1143357999346138015_n.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "High-resolution authentic photo of competition-ready bodybuilder flexing with coaches and teammates smiling.",
+    "flags": [
+      "high_quality",
+      "authentic_community"
+    ],
+    "usable": true,
+    "recommended_use": "Gallery / Community / Bodybuilding achievements",
+    "width": 1600,
+    "height": 1200,
+    "aspect_ratio": 1.33,
+    "file_size_bytes": 312824,
+    "file_size_kb": 305.5
+  },
+  {
+    "path": "images/bodybuildingimgs/475256322_122141920820379320_1143357999346138015_n - Copy.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "Exact binary duplicate of 475256322_122141920820379320_1143357999346138015_n.jpg.",
+    "flags": [
+      "duplicate"
+    ],
+    "usable": false,
+    "recommended_use": "Exclude duplicate",
+    "width": 1600,
+    "height": 1200,
+    "aspect_ratio": 1.33,
+    "file_size_bytes": 312824,
+    "file_size_kb": 305.5
+  },
+  {
+    "path": "images/bodybuildingimgs/494047990_1141098078030487_7228079178022420196_n.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "Mobile screenshot with heavy black bars and status bar showing Mr. Kasur stage lineup.",
+    "flags": [
+      "screenshot",
+      "ui_overlay",
+      "letterboxed"
+    ],
+    "usable": false,
+    "recommended_use": "Archive only",
+    "width": 1080,
+    "height": 2408,
+    "aspect_ratio": 0.45,
+    "file_size_bytes": 133286,
+    "file_size_kb": 130.2
+  },
+  {
+    "path": "images/bodybuildingimgs/494415526_1142049147935380_2180483874980772811_n.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "Outdoor portrait of Coach Abu Huraira in garden setting beside an associate holding an award.",
+    "flags": [
+      "high_quality",
+      "coach_portrait"
+    ],
+    "usable": true,
+    "recommended_use": "About / Founder section",
+    "width": 960,
+    "height": 1280,
+    "aspect_ratio": 0.75,
+    "file_size_bytes": 218028,
+    "file_size_kb": 212.9
+  },
+  {
+    "path": "images/bodybuildingimgs/494746092_1142049461268682_5453794178761180483_n.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "Coach Abu Huraira on stage receiving an official honor plaque at 73rd Mr. & Jr. Mr. Lahore 2024 from association patrons.",
+    "flags": [
+      "high_quality",
+      "prestigious_award",
+      "founder_honor"
+    ],
+    "usable": true,
+    "recommended_use": "About section / Recognition & Credentials",
+    "width": 1280,
+    "height": 960,
+    "aspect_ratio": 1.33,
+    "file_size_bytes": 220950,
+    "file_size_kb": 215.8
+  },
+  {
+    "path": "images/bodybuildingimgs/494988497_1143278777812417_4778010883316434889_n.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "Holiday greeting graphic with Arabic calligraphy (Eid Mubarak) over cushions.",
+    "flags": [
+      "greeting_graphic",
+      "non_gym"
+    ],
+    "usable": false,
+    "recommended_use": "Do not use",
+    "width": 1138,
+    "height": 1064,
+    "aspect_ratio": 1.07,
+    "file_size_bytes": 60543,
+    "file_size_kb": 59.1
+  },
+  {
+    "path": "images/bodybuildingimgs/529397612_1225255266281434_9191701828997500904_n.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "Coach Abu Huraira and head trainer posing with commercial Matrix treadmills in the outdoor natural greenery training area.",
+    "flags": [
+      "high_quality",
+      "facilities",
+      "treadmills",
+      "outdoor_area"
+    ],
+    "usable": true,
+    "recommended_use": "Facilities / Cardio section / About",
+    "width": 1536,
+    "height": 2048,
+    "aspect_ratio": 0.75,
+    "file_size_bytes": 294814,
+    "file_size_kb": 287.9
+  },
+  {
+    "path": "images/bodybuildingimgs/529539602_1225255049614789_4352760190541826014_n.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "Indoor gym photo of Coach Abu Huraira and trainer with Technogym selectorized equipment and member lockers.",
+    "flags": [
+      "high_quality",
+      "facilities",
+      "technogym_machinery"
+    ],
+    "usable": true,
+    "recommended_use": "Facilities / Modern Machinery section",
+    "width": 900,
+    "height": 1600,
+    "aspect_ratio": 0.56,
+    "file_size_bytes": 133582,
+    "file_size_kb": 130.5
+  },
+  {
+    "path": "images/bodybuildingimgs/529905374_1225255609614733_4981813456379958493_n.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "Wide landscape photo showing open-air courtyard training zone with 4 Matrix commercial treadmills, Coach Abu Huraira and trainer.",
+    "flags": [
+      "high_quality",
+      "wide_angle",
+      "open_air_training",
+      "matrix_machines"
+    ],
+    "usable": true,
+    "recommended_use": "Facilities / Open Air Zone / Gallery showcase",
+    "width": 2048,
+    "height": 1536,
+    "aspect_ratio": 1.33,
+    "file_size_bytes": 306156,
+    "file_size_kb": 299.0
+  },
+  {
+    "path": "images/bodybuildingimgs/530205387_1225255436281417_8585530521996178988_n.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "High-resolution indoor photo of Coach Abu Huraira and trainer by Technogym equipment, showing authentic Urdu gym guidance sign.",
+    "flags": [
+      "high_quality",
+      "facilities",
+      "coach_authentic_sign"
+    ],
+    "usable": true,
+    "recommended_use": "Trainers / Facilities / Authenticity proof",
+    "width": 1152,
+    "height": 2048,
+    "aspect_ratio": 0.56,
+    "file_size_bytes": 184385,
+    "file_size_kb": 180.1
+  },
+  {
+    "path": "images/bodybuildingimgs/605130127_1342401714566788_6565343521310670729_n.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "Mr. Kasur sash winner posing with new motorcycle award and gym teammates.",
+    "flags": [
+      "championship_award",
+      "sponsor_backdrop"
+    ],
+    "usable": true,
+    "recommended_use": "Achievements / Hall of Fame",
+    "width": 1200,
+    "height": 1600,
+    "aspect_ratio": 0.75,
+    "file_size_bytes": 147923,
+    "file_size_kb": 144.5
+  },
+  {
+    "path": "images/bodybuildingimgs/724045603_1492273109579647_3282129516243682144_n.jpg",
+    "subfolder": "bodybuildingimgs",
+    "description": "Mobile screenshot of official Urdu poster congratulating Kasur Bodybuilding Association cabinet, listing Coach Abu Huraira as General Secretary.",
+    "flags": [
+      "screenshot",
+      "ui_overlay",
+      "official_poster"
+    ],
+    "usable": false,
+    "recommended_use": "Archive / Fact reference (confirms Coach is General Secretary of Kasur Bodybuilding Association)",
+    "width": 1080,
+    "height": 2408,
+    "aspect_ratio": 0.45,
+    "file_size_bytes": 150362,
+    "file_size_kb": 146.8
+  }
+]

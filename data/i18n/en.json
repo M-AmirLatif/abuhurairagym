@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "facilities": "Facilities",
+    "trainers": "Coaches",
+    "plans": "Plans",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "contact": "Contact",
+    "joinNow": "Join Now",
+    "langSwitch": "اردو"
+  },
+  "hero": {
+    "liveStatus": "Open Today • Closes 12 AM",
+    "reviewPill": "4.6 Google Rating • 155 Reviews",
+    "headline": "FORGE YOUR BODY. BUILD YOUR LEGACY.",
+    "subline": "Kasur's most trusted fitness institution. Advanced Technogym and Matrix equipment, open-air training grounds, and championship coaching under Ex Mr. Kasur Ustaad Abu Huraira.",
+    "joinWhatsApp": "Join on WhatsApp",
+    "callDirect": "Call +92 321 4670428",
+    "cashNotice": "Cash Payments Only at Front Desk"
+  },
+  "stats": {
+    "ratingScore": "4.6",
+    "ratingLabel": "Google Rating",
+    "ratingSub": "Based on 155 verified member reviews",
+    "communityScore": "155+",
+    "communityLabel": "Reviews & Growing",
+    "communitySub": "Kasur's premier community choice",
+    "legacyScore": "Oldest",
+    "legacyLabel": "Gym in Kasur",
+    "legacySub": "Pioneering athletic training in Kot Murad Khan",
+    "hoursScore": "12 AM",
+    "hoursLabel": "Open Daily Until",
+    "hoursSub": "Flexible hours 7 days a week"
+  },
+  "about": {
+    "badge": "Champion Legacy & Mentorship",
+    "title": "GUIDANCE OF A TRUE CHAMPION",
+    "subtitle": "Mentored by Ustaad Abu Huraira — Ex Mr. Kasur & General Secretary of Kasur Bodybuilding Association.",
+    "p1": "For over two decades, Abu Huraira World Gym Fitness Center has stood as the foundation of authentic strength culture in Kasur. Located in Kot Murad Khan, our institution has trained everyday working people, aspiring youth, and regional bodybuilding champions alike.",
+    "p2": "We believe real fitness is forged through unwavering discipline, clean standards, proper biomechanics, and genuine human guidance. Under the personal oversight of Coach Abu Huraira, you receive personalized advice tailored to your physical capabilities and lifelong health goals.",
+    "bullet1Title": "Unrivaled Experience",
+    "bullet1Desc": "Over 20 years producing district and provincial physique medalists.",
+    "bullet2Title": "Pristine Training Grounds",
+    "bullet2Desc": "Meticulously maintained equipment, sanitized gym floors, and fresh air patio.",
+    "bullet3Title": "Supportive Brotherhood",
+    "bullet3Desc": "A respectful, family-like atmosphere where every member is encouraged.",
+    "viewAwards": "View Official Credentials & Awards"
+  },
+  "facilities": {
+    "badge": "World-Class Infrastructure",
+    "title": "ENGINEERED FOR PROGRESS",
+    "subtitle": "International-standard machinery, open-air endurance zones, and clean recovery spaces.",
+    "openAirBadge": "Natural Air Patio",
+    "viewAll": "Explore All Facilities"
+  },
+  "ladies": {
+    "badge": "Training Advisory",
+    "title": "Dedicated Training for Men & Women",
+    "description": "Historical reviews celebrate World Gym for supporting both men and women's fitness. To ensure comfort, privacy, and dedicated trainer availability, please check with us directly for current designated female slots and schedule updates.",
+    "cta": "Ask About Women's Training Hours"
+  },
+  "plans": {
+    "badge": "Transparent Membership",
+    "title": "INVEST IN YOUR STRENGTH",
+    "subtitle": "Straightforward membership tiers. No hidden charges. Cash only.",
+    "cashBadge": "Front Desk Cash Payments Only",
+    "contactFees": "Contact for latest fees",
+    "popular": "Most Popular",
+    "recommended": "Recommended",
+    "competitive": "Championship"
+  },
+  "gallery": {
+    "badge": "Real Gym Visuals",
+    "title": "INSIDE WORLD GYM KASUR",
+    "subtitle": "Authentic photography of our equipment, athletes, and daily training atmosphere.",
+    "filterAll": "All Photos",
+    "filterFacilities": "Facilities & Machines",
+    "filterAchievements": "Trophies & Champions",
+    "filterCommunity": "Athletes & Community"
+  },
+  "reviews": {
+    "badge": "155 Verified Google Reviews",
+    "title": "VOICES OF KASUR",
+    "subtitle": "Real member testimonials from Google Maps. 100% genuine feedback from our community.",
+    "summaryScore": "4.6",
+    "outOf": "out of 5.0",
+    "openMaps": "View All Reviews on Google Maps",
+    "filterAll": "All Themes",
+    "filterCoach": "Coach Guidance",
+    "filterMachinery": "Machinery & Equipment",
+    "filterEnvironment": "Environment & Cleanliness",
+    "filterLadies": "Women & Men",
+    "filterStaff": "Staff & Behaviour"
+  },
+  "timing": {
+    "badge": "Schedule & Planning",
+    "title": "TIMINGS & VISIT GUIDE",
+    "subtitle": "Open daily until midnight to accommodate early risers and late-night workers.",
+    "dailyStatus": "Open 7 Days a Week",
+    "closingNotice": "Closes 12:00 AM (Midnight)",
+    "peakDisclaimer": "Sample activity chart shown below for guidance; contact on WhatsApp for real-time crowd status.",
+    "morning": "Morning Session",
+    "afternoon": "Afternoon Session",
+    "evening": "Peak Evening Hours",
+    "night": "Late Night Session"
+  },
+  "contact": {
+    "badge": "Get in Touch",
+    "title": "START YOUR JOURNEY TODAY",
+    "subtitle": "Visit us in Kot Murad Khan, call directly, or send a quick WhatsApp note.",
+    "addressTitle": "Gym Location",
+    "address": "4C8R+5XC, Nizam Pura Rd, near Jamal Market, near City Hospital, Kot Murad Khan, Kasur, 55050",
+    "phoneTitle": "Direct Phone",
+    "phone": "+92 321 4670428",
+    "whatsappTitle": "WhatsApp Support",
+    "whatsapp": "+92 321 4670428",
+    "socialTitle": "Official Facebook",
+    "social": "World Gym Kasur Official",
+    "formTitle": "Request a Free Walk-In Pass",
+    "formSubtitle": "Fill this simple form to generate a instant WhatsApp message to Coach Abu Huraira.",
+    "nameLabel": "Your Full Name",
+    "phoneLabel": "Phone / WhatsApp Number",
+    "goalLabel": "Fitness Goal",
+    "goalPlaceholder": "e.g., Muscle Gain, Weight Loss, General Fitness",
+    "timeLabel": "Preferred Time to Visit",
+    "timePlaceholder": "e.g., 6:00 PM",
+    "submitButton": "Send Inquiry via WhatsApp",
+    "directionsButton": "Get Directions on Google Maps"
+  },
+  "faq": {
+    "badge": "Frequently Asked Questions",
+    "title": "EVERYTHING YOU NEED TO KNOW",
+    "subtitle": "Clear, honest answers about memberships, policies, and facilities."
+  },
+  "footer": {
+    "tagline": "Kasur's Premier Strength & Bodybuilding Institution",
+    "quickLinks": "Quick Navigation",
+    "hours": "Daily Hours",
+    "hoursDesc": "Open 7 days a week until 12:00 AM (Midnight).",
+    "payments": "Payment Method",
+    "paymentsDesc": "Cash only at reception desk.",
+    "rights": "All rights reserved. Abu Huraira World Gym Fitness Center.",
+    "developerCredit": "Designed & Built with High-Performance Precision"
+  },
+  "mobileDock": {
+    "call": "Call Now",
+    "whatsapp": "WhatsApp"
+  }
+}
