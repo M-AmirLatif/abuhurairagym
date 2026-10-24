@@ -8,7 +8,11 @@
     "score": 4.6,
     "reviewCount": 155,
     "platform": "Google",
-    "mapsUrl": "https://maps.google.com/?q=Abu+Huraira+World+Gym+Fitness+Center+Kasur"
+    "mapsUrl": "https://maps.google.com/?q=Abu+Huraira+World+Gym+Fitness+Center+Kasur",
+    "facebookRecommendation": {
+      "recommendationRate": "100%",
+      "reviewCount": 6
+    }
   },
   "contact": {
     "phone": "+923214670428",
@@ -16,6 +20,7 @@
     "whatsapp": "923214670428",
     "whatsappUrl": "https://wa.me/923214670428",
     "address": "4C8R+5XC, Nizam Pura Rd, near Jamal Market, near City Hospital, Kot Murad Khan, Kasur, 55050, Pakistan",
+    "localLandmarks": "Nazd Kharkhana Mufasal, Thana B-Division, near City Hospital",
     "plusCode": "4C8R+5XC",
     "neighborhood": "Kot Murad Khan",
     "city": "Kasur",

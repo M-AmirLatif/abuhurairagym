@@ -9,6 +9,10 @@ export interface GymData {
     reviewCount: number;
     platform: string;
     mapsUrl: string;
+    facebookRecommendation?: {
+      recommendationRate: string;
+      reviewCount: number;
+    };
   };
   contact: {
     phone: string;
@@ -16,6 +20,7 @@ export interface GymData {
     whatsapp: string;
     whatsappUrl: string;
     address: string;
+    localLandmarks?: string;
     plusCode: string;
     neighborhood: string;
     city: string;

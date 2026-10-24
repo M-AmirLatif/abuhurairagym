@@ -6,9 +6,10 @@ This document outlines all unverified business details, photo permissions, missi
 
 ## 1. Critical Verifications (Data to Confirm)
 
-- [ ] **WhatsApp Number Confirmation**:
-  * Currently configured: `+92 321 4670428` (`wa.me/923214670428`).
-  * Action: Verify if inquiries and member messages should be routed to this exact number or a separate front-desk phone.
+- [x] **WhatsApp Number Confirmation (VERIFIED)**:
+  * Confirmed via official Facebook page: `0321 4670428` (`+92 321 4670428` / `wa.me/923214670428`) is directly connected to the WhatsApp CTA button.
+  * Verified local landmark address: *"Nazd Kharkhana Mufasal, Thana B-Division, near City Hospital, Kot Murad Khan, Kasur"*.
+  * Verified Facebook Community Rating: 100% recommend (6 reviews).
 
 - [ ] **Daily Opening Time**:
   * Currently confirmed: Gym is open daily and closes at **12:00 AM (Midnight)**.

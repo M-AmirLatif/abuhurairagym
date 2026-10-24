@@ -120,6 +120,18 @@ export default function Contact({ gym, lang, t }: ContactProps) {
                   <p className="text-sm font-medium text-white leading-relaxed mt-0.5">
                     {gym.contact.address}
                   </p>
+                  {gym.contact.localLandmarks && (
+                    <p className="text-xs text-zinc-300 mt-1.5 flex items-center gap-1.5">
+                      <span className="text-gym-gold font-bold uppercase tracking-wider text-[11px]">
+                        {lang === "en" ? "Landmark:" : "اہم نشانی:"}
+                      </span>
+                      <span>
+                        {lang === "en"
+                          ? gym.contact.localLandmarks
+                          : "نزد کارخانہ مفاصل، تھانہ بی ڈویژن، سٹی ہسپتال، قصور"}
+                      </span>
+                    </p>
+                  )}
                   <span className="inline-block mt-2 font-mono text-xs text-amber-500/90 bg-black/60 px-2.5 py-1 rounded border border-zinc-800">
                     Plus Code: {gym.contact.plusCode}
                   </span>

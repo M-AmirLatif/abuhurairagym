@@ -76,9 +76,14 @@ export default function Reviews({ gym, lang, t }: ReviewsProps) {
                   <Star key={i} className="w-4 h-4 fill-gym-gold" />
                 ))}
               </div>
-              <span className="text-xs text-zinc-300">
+              <span className="text-xs text-zinc-300 block">
                 Based on 155 authentic Google Maps reviews
               </span>
+              <div className="mt-2.5 pt-2 border-t border-zinc-800/80 flex items-center gap-1.5 text-[11px] text-zinc-400">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
+                <span className="font-semibold text-zinc-200">100% Recommended</span>
+                <span>(Facebook community)</span>
+              </div>
             </div>
 
             <a
