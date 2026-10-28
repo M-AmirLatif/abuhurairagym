@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | Abu Huraira World Gym Kasur</title>
+  <meta name="description" content="Page not found. Return to Abu Huraira World Gym Fitness Center Kasur.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .error-page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      position: relative;
+      background: #0a0e14;
+      overflow: hidden;
+    }
+    .error-bg-glow {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0, 141, 136, 0.22) 0%, rgba(245, 158, 11, 0.08) 50%, transparent 70%);
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 1;
+    }
+    .error-content {
+      position: relative;
+      z-index: 2;
+      max-width: 620px;
+      background: rgba(18, 24, 34, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      padding: 3rem 2rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(16px);
+    }
+    .error-code {
+      font-size: clamp(4.5rem, 12vw, 7.5rem);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      background: linear-gradient(135deg, #ffffff 30%, #00b4ad 70%, #f59e0b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+    .error-tag {
+      display: inline-block;
+      padding: 0.35rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #00b4ad;
+      background: rgba(0, 141, 136, 0.15);
+      border: 1px solid rgba(0, 180, 173, 0.3);
+      border-radius: 9999px;
+      margin-bottom: 1.25rem;
+    }
+    .error-title {
+      font-size: clamp(1.5rem, 4vw, 2.25rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+    .error-desc {
+      font-size: 1.05rem;
+      color: #94a3b8;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .error-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .error-footer-info {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.875rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body class="bg-dark">
+  <div class="error-page-wrapper">
+    <div class="error-bg-glow"></div>
+    <div class="error-content">
+      <span class="error-tag">404 ERROR</span>
+      <div class="error-code">404</div>
+      <h1 class="error-title">Page Not Found</h1>
+      <p class="error-desc">
+        The workout session you're looking for doesn't exist or has moved. Return to the main floor of Abu Huraira World Gym.
+      </p>
+      <div class="error-actions">
+        <a href="/" class="btn-pill btn-pill-teal btn-lg">
+          <span>Return Home</span> <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://wa.me/923214670428" class="btn-pill btn-pill-glass btn-lg" target="_blank" rel="noopener">
+          <span>WhatsApp Us</span> <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <div class="error-footer-info">
+        <p>Abu Huraira World Gym Fitness Center • Kot Murad Khan, Kasur</p>
+        <p>Open daily, closes 12 AM • Cash payments only</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
