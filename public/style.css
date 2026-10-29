@@ -3556,12 +3556,10 @@ body.lang-ur {
   }
 }
 
-/* 3D Card Tilt on Desktop */
+/* Card Hardware Optimization */
 @media (pointer: fine) and (min-width: 1024px) {
   .bento-card, .facility-card, .review-card, .membership-wide-card {
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    will-change: transform;
+    transform: translateZ(0);
   }
 }
 

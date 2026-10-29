@@ -418,142 +418,69 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. Preloader removed: initialize hero immediately
   initHeroAnimations();
 
-  // 3. Lenis Smooth Scrolling & GSAP (Dynamic import for desktop fine pointer only)
+  // 3. Fast hardware-accelerated scroll (Zero hijacking, 120Hz native performance)
   let lenis = null;
-  const initDesktopSuite = () => {
-    if (typeof Lenis !== 'undefined') {
-      lenis = new Lenis({
-        duration: 1.2,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        smoothWheel: true,
-        wheelMultiplier: 1,
-      });
 
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
-      requestAnimationFrame(raf);
-
-      lenis.on('scroll', (e) => {
-        const scrollY = (typeof e === 'number') ? e : (e.scroll || window.scrollY || 0);
-        updateHeaderScroll(scrollY);
-      });
-    }
-
-    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
-      gsap.registerPlugin(ScrollTrigger);
-      if (lenis) {
-        lenis.on('scroll', ScrollTrigger.update);
-        gsap.ticker.add((time) => lenis.raf(time * 1000));
-        gsap.ticker.lagSmoothing(0);
-      }
-
-      // Parallax Scrub on Oversized Background Watermarks (Desktop only)
-      document.querySelectorAll('.section-bg-watermark').forEach(wm => {
-        gsap.to(wm, {
-          yPercent: -20,
-          ease: 'none',
-          scrollTrigger: {
-            trigger: wm.parentElement,
-            start: 'top bottom',
-            end: 'bottom top',
-            scrub: 1.2
-          }
-        });
-      });
-
-      // Desktop cards entrance
-      gsap.fromTo('.facility-card',
-        { y: 35, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.65,
-          stagger: 0.1,
-          ease: 'power2.out',
-          scrollTrigger: {
-            trigger: '.facilities-carousel-wrapper',
-            start: 'top 92%',
-            once: true,
-          }
-        }
-      );
-      ScrollTrigger.refresh();
-    }
-  };
-
-  if (!prefersReducedMotion && isDesktopPointer) {
-    const loadScript = (src) => new Promise((resolve) => {
-      const s = document.createElement('script');
-      s.src = src;
-      s.onload = resolve;
-      s.onerror = resolve;
-      document.head.appendChild(s);
-    });
-
-    // Defer desktop motion bundle load until main thread idle
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(() => {
-        Promise.all([
-          loadScript('https://unpkg.com/lenis@1.1.20/dist/lenis.min.js'),
-          loadScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'),
-          loadScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js')
-        ]).then(initDesktopSuite);
-      });
-    } else {
-      setTimeout(() => {
-        Promise.all([
-          loadScript('https://unpkg.com/lenis@1.1.20/dist/lenis.min.js'),
-          loadScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'),
-          loadScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js')
-        ]).then(initDesktopSuite);
-      }, 500);
-    }
-  }
-
-  // 4. Header Scroll Effect & Active Link Highlight
+  // 4. Butter-Smooth Header & Mobile Bottom Bar (rAF Throttled, Zero Layout Thrashing)
   const header = document.getElementById('header');
   const navLinks = document.querySelectorAll('.nav-link');
   const sections = document.querySelectorAll('section[id]');
+  const mobileStickyBar = document.getElementById('mobileStickyBar');
+  let lastScrollPos = window.scrollY || 0;
+  let scrollTicking = false;
 
-  const updateHeaderScroll = (y) => {
-    if (!header) return;
-    if (y > 30) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-
-    // Active nav link detection
-    let currentSectionId = '';
-    sections.forEach(section => {
-      const top = section.offsetTop - 120;
-      const height = section.offsetHeight;
-      if (y >= top && y < top + height) {
-        currentSectionId = section.getAttribute('id');
+  const onScrollFrame = () => {
+    const y = window.scrollY || document.documentElement.scrollTop || 0;
+    
+    if (header) {
+      if (y > 30) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
       }
-    });
-
-    if (currentSectionId) {
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${currentSectionId}`) {
-          link.classList.add('active');
-        }
-      });
     }
+
+    if (mobileStickyBar) {
+      if (y > 120) {
+        if (y > lastScrollPos + 6) {
+          mobileStickyBar.classList.add('bar-hidden');
+        } else if (y < lastScrollPos - 6) {
+          mobileStickyBar.classList.remove('bar-hidden');
+        }
+      } else {
+        mobileStickyBar.classList.remove('bar-hidden');
+      }
+      lastScrollPos = y;
+    }
+
+    scrollTicking = false;
   };
 
   window.addEventListener('scroll', () => {
-    updateHeaderScroll(window.scrollY || document.documentElement.scrollTop || 0);
+    if (!scrollTicking) {
+      requestAnimationFrame(onScrollFrame);
+      scrollTicking = true;
+    }
   }, { passive: true });
 
-  if (lenis) {
-    lenis.on('scroll', (e) => {
-      const scrollY = (typeof e === 'number') ? e : (e.scroll || window.scrollY || 0);
-      updateHeaderScroll(scrollY);
-    });
+  // High-performance IntersectionObserver for nav active highlight (ZERO reflow)
+  if ('IntersectionObserver' in window && sections.length > 0) {
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          navLinks.forEach(link => {
+            if (link.getAttribute('href') === '#' + id) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          });
+        }
+      });
+    }, { rootMargin: '-20% 0px -65% 0px', threshold: 0 });
+
+    sections.forEach(sec => navObserver.observe(sec));
   }
 
   // 5. Mobile Navigation Drawer
@@ -590,27 +517,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 6. Sticky Mobile Bottom Bar (Hide on Scroll Down, Show on Scroll Up)
-  const mobileStickyBar = document.getElementById('mobileStickyBar');
-  let lastScrollPos = window.scrollY || 0;
-
-  if (mobileStickyBar) {
-    window.addEventListener('scroll', () => {
-      const currentScrollPos = window.scrollY || document.documentElement.scrollTop || 0;
-      if (currentScrollPos > 120) {
-        if (currentScrollPos > lastScrollPos + 8) {
-          // Scrolling down
-          mobileStickyBar.classList.add('bar-hidden');
-        } else if (currentScrollPos < lastScrollPos - 8) {
-          // Scrolling up
-          mobileStickyBar.classList.remove('bar-hidden');
-        }
-      } else {
-        mobileStickyBar.classList.remove('bar-hidden');
-      }
-      lastScrollPos = currentScrollPos;
-    }, { passive: true });
-  }
 
   // 7. Facilities Carousel Navigation & Progress Bar
   const carouselViewport = document.getElementById('carouselViewport');
