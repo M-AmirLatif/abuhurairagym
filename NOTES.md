@@ -57,3 +57,30 @@
 - **Legal & SEO Compliance**: Created `privacy.html`, `terms.html`, `robots.txt`, and `sitemap.xml`. Enhanced JSON-LD to `["ExerciseGym", "HealthClub"]`. Added `hreflang` tags for EN and UR.
 - **Analytics**: Integrated Vercel Analytics with custom click event handlers for calls, WhatsApp queries, and section navigation.
 - **Strict Accessibility & Performance**: Resolved contrast ratios and ARIA attributes to achieve 100 on Best Practices, 100 on SEO, 96+ on Accessibility, and verified zero horizontal overflow across 360px–1280px viewports.
+
+
+## Low-Resolution Source Photos Audit
+Processed total 168 unique photos into WebP thumbnails and 1200px full view.
+The following 7 photos have resolution under 500px in the source dataset:
+- `images/newimages\044.jpg` (334x622)
+- `images/newimages\068.jpg` (720x480)
+- `images/newimages\069.jpg` (720x480)
+- `images/newimages\070.jpg` (720x480)
+- `images/newimages\071.jpg` (720x480)
+- `images/enhanced\hero-01-mobile.webp` (500x375)
+- `images/enhanced\hero-02.webp` (560x402)
+
+
+## Gallery Management & Hiding Photos
+- **Source of Truth**: `gallery.json` (and `public/gallery.json`).
+- **How to Hide a Photo**:
+  1. Open `gallery.json`.
+  2. Locate the photo entry by its `"id"` (e.g., `"gym_photo_042"`).
+  3. Change `"hidden": false` to `"hidden": true`.
+  4. Save the file.
+  5. Any photo with `"hidden": true` will automatically be excluded from:
+     - The Hero Strip dual scrolling tracks
+     - The Category counts badge and tab numbers
+     - The Masonry grid
+     - The Lightbox modal and swipe navigation
+  6. Rebuild minified assets and redeploy with `npx vercel --prod`.

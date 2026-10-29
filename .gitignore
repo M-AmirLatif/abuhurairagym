@@ -1,4 +1,7 @@
 .vercel
-
+node_modules/
 scratch/
 lh-report.json
+lh-live-report.json
+.agent/
+.gemini/

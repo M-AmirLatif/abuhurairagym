@@ -26,13 +26,13 @@ const translations = {
     hero_book_visit: "Book a free visit",
     join_eyebrow: "SIMPLE 3-STEP PROCESS ✦",
     join_title: "How to start training.",
-    join_sub: "No complicated sign-up or registration fees. Join in three straightforward steps.",
-    step1_title: "Visit or Message",
-    step1_desc: "Walk into our Kot Murad Khan facility or send us a WhatsApp message to confirm open hours and slots.",
-    step2_title: "Choose Membership",
-    step2_desc: "Pick monthly fitness, cardio, or guided strength routines under Ustaad Abu Huraira (Ex Mr. Kasur).",
-    step3_title: "Start Training",
-    step3_desc: "Pay via cash at the front reception and hit the gym floor. Open-air courtyard and modern strength machines.",
+    join_sub: "Join in three straightforward steps.",
+    step1_title: "Visit or message us",
+    step1_desc: "Visit our gym in Kot Murad Khan or message us on WhatsApp.",
+    step2_title: "Ask about membership on WhatsApp",
+    step2_desc: "Ask about current membership options on WhatsApp. Cash payments only.",
+    step3_title: "Start training",
+    step3_desc: "Open daily, closes 12 AM. Open-air courtyard and modern machines.",
     join_cta_btn: "Book a free visit",
     rev_leave_btn: "Leave a review on Google",
     qr_title: "Scan to review on Google Maps",
@@ -85,7 +85,7 @@ const translations = {
 
     form_tag: "REQUEST A VISIT ✦",
     form_heading: "Plan your gym visit.",
-    form_subtext: "Enter your details to generate a pre-filled WhatsApp message. No registration or backend needed.",
+    form_subtext: "Enter your details to generate a pre-filled WhatsApp message directly on WhatsApp.",
     form_lbl_name: "Name",
     form_ph_name: "Your name",
     form_lbl_phone: "Phone",
@@ -97,9 +97,18 @@ const translations = {
     form_submit: "Submit on WhatsApp",
     form_privacy: "Payments are cash only. Open daily, closes 12 AM.",
 
-    gal_title: "Gym photo gallery.",
-    gal_sub: "Real facilities, equipment, and training atmosphere at ABU HURAIRA WORLD GYM in Kasur.",
+        gal_title: "Gym photo gallery.",
+    gal_sub: "Real facilities, equipment, and training atmosphere at Abu Huraira World Gym in Kasur.",
     gal_tag: "TAP PHOTO TO ENLARGE ✦",
+    gal_tab_all: "All",
+    gal_tab_facility: "Facility",
+    gal_tab_equipment: "Equipment",
+    gal_tab_training: "Training",
+    gal_tab_members: "Members",
+    gal_tab_events: "Events",
+    gal_load_more: "Load More Photos",
+    gal_removal_note: "Want a photo removed?",
+    gal_removal_cta: "Message us on WhatsApp",
 
     rev_rating_pill: "4.6 on Google • 155 reviews",
     rev_title: "What our members say.",
@@ -145,7 +154,7 @@ const translations = {
     footer_fac_open: "Open Courtyard Training",
     footer_fac_mach: "Modern Strength Machines",
     footer_fac_cafe: "Juice & Shakes Cafe",
-    footer_fac_women: "Ask about Women's Hours",
+    footer_fac_women: "Women's training hours",
     footer_fac_kids: "Good for Kids",
     footer_h_contacts: "OUR CONTACTS",
     footer_wa: "WhatsApp Message",
@@ -185,13 +194,13 @@ const translations = {
     hero_book_visit: "مفت وزٹ بک کریں",
     join_eyebrow: "تین آسان مراحل ✦",
     join_title: "ورزش کیسے شروع کریں۔",
-    join_sub: "کوئی پیچیدہ رجسٹریشن یا چھپی ہوئی فیس نہیں۔ تین آسان مراحل میں شروع کریں۔",
+    join_sub: "تین آسان مراحل میں شروع کریں۔",
     step1_title: "تشریف لائیں یا میسج کریں",
-    step1_desc: "کوٹ مراد خان میں ہمارے جم تشریف لائیں یا اوقات اور معلومات کے لیے WhatsApp میسج کریں۔",
-    step2_title: "ممبرشپ کا انتخاب کریں",
-    step2_desc: "ماہانہ فٹنس، کارڈیو یا استاد ابو ہریرہ (سابق مسٹر قصور) کی زیر نگرانی رہنمائی کا انتخاب کریں۔",
+    step1_desc: "کوٹ مراد خان میں ہمارے جم تشریف لائیں یا WhatsApp پر میسج کریں۔",
+    step2_title: "WhatsApp پر ممبرشپ معلوم کریں",
+    step2_desc: "موجودہ ممبرشپ آپشنز کے بارے میں WhatsApp پر پوچھیں۔ ادائیگیاں صرف نقد ہیں۔",
     step3_title: "ورزش شروع کریں",
-    step3_desc: "کاؤنٹر پر نقد فیس ادا کریں اور ورزش شروع کریں۔ کھلا صحن اور جدید ورزشی مشینیں آپ کی منتظر ہیں۔",
+    step3_desc: "روزانہ کھلا ہے، رات 12 بجے بند۔ کھلا صحن اور جدید ورزشی مشینیں دستیاب ہیں۔",
     join_cta_btn: "مفت وزٹ بک کریں",
     rev_leave_btn: "Google پر اپنا جائزہ دیں",
     qr_title: "Google Maps پر جائزہ لینے کے لیے اسکین کریں",
@@ -244,7 +253,7 @@ const translations = {
 
     form_tag: "وزٹ کی درخواست ✦",
     form_heading: "جم وزٹ کا وقت طے کریں۔",
-    form_subtext: "اپنی تفصیلات درج کریں تاکہ پہلے سے تیار شدہ WhatsApp میسج بن جائے۔ کسی رجسٹریشن کی ضرورت نہیں۔",
+    form_subtext: "اپنی تفصیلات درج کریں تاکہ پہلے سے تیار شدہ WhatsApp میسج بن جائے۔",
     form_lbl_name: "نام",
     form_ph_name: "آپ کا نام",
     form_lbl_phone: "فون نمبر",
@@ -256,9 +265,18 @@ const translations = {
     form_submit: "WhatsApp پر بھیجیں",
     form_privacy: "ادائیگیاں صرف نقد ہیں۔ روزانہ کھلا ہے، رات 12 بجے بند ہوتا ہے۔",
 
-    gal_title: "جم فوٹو گیلری۔",
-    gal_sub: "ابو ہریرہ ورلڈ جم قصور کی اصل سہولیات، مشینیں اور ٹریننگ کا ماحول۔",
-    gal_tag: "تصویر بڑی دیکھنے کے لیے کلک کریں ✦",
+        gal_title: "Gym photo gallery.",
+    gal_sub: "Real facilities, equipment, and training atmosphere at Abu Huraira World Gym in Kasur.",
+    gal_tag: "TAP PHOTO TO ENLARGE ✦",
+    gal_tab_all: "All",
+    gal_tab_facility: "Facility",
+    gal_tab_equipment: "Equipment",
+    gal_tab_training: "Training",
+    gal_tab_members: "Members",
+    gal_tab_events: "Events",
+    gal_load_more: "Load More Photos",
+    gal_removal_note: "Want a photo removed?",
+    gal_removal_cta: "Message us on WhatsApp",
 
     rev_rating_pill: "Google پر 4.6 • 155 جائزے",
     rev_title: "ہمارے ممبرز کیا کہتے ہیں۔",
@@ -304,7 +322,7 @@ const translations = {
     footer_fac_open: "کھلے صحن میں ٹریننگ",
     footer_fac_mach: "جدید ورزشی مشینیں",
     footer_fac_cafe: "جوس اور شیک کیفے",
-    footer_fac_women: "خواتین کے اوقات معلوم کریں",
+    footer_fac_women: "خواتین کے تربیتی اوقات",
     footer_fac_kids: "بچوں کے لیے مناسب",
     footer_h_contacts: "ہمارے رابطے",
     footer_wa: "WhatsApp پیغام",
@@ -397,30 +415,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   applyLanguage(currentLang);
 
-  // 2. Preloader Animation Suite (<1.5s mobile, skippable)
-  const preloader = document.getElementById('sitePreloader');
-  const skipBtn = document.getElementById('skipPreloader');
-
-  const dismissPreloader = () => {
-    if (!preloader || preloader.classList.contains('done')) return;
-    preloader.classList.add('done');
-    setTimeout(() => {
-      preloader.style.display = 'none';
-      initHeroAnimations();
-    }, 400);
-  };
-
-  if (preloader) {
-    if (prefersReducedMotion || isHeadless) {
-      preloader.style.display = 'none';
-      preloader.classList.add('done');
-    } else {
-      if (skipBtn) skipBtn.addEventListener('click', dismissPreloader);
-      preloader.addEventListener('click', dismissPreloader);
-      const autoDismissDelay = window.innerWidth < 768 ? 80 : 1000;
-      setTimeout(dismissPreloader, autoDismissDelay);
-    }
-  }
+  // 2. Preloader removed: initialize hero immediately
+  initHeroAnimations();
 
   // 3. Lenis Smooth Scrolling & GSAP (Dynamic import for desktop fine pointer only)
   let lenis = null;
@@ -957,35 +953,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 13. Gallery Load More & Full Lightbox Navigation (155 Photos)
+    // 13. GALLERY REBUILD (FINAL) - Dynamic Category Filter, Masonry & Lightbox
   const galleryGrid = document.getElementById('mainGallery');
-  const loadMoreBtn = document.getElementById('loadMoreBtn');
-  const remainingCountEl = document.getElementById('galleryRemainingCount');
+  const galleryTabs = document.querySelectorAll('.gallery-tab');
+  const tabIndicator = document.getElementById('tabIndicator');
+  const loadMoreBtn = document.getElementById('galleryLoadMoreBtn');
+  const loadMoreWrap = document.getElementById('loadMoreWrap');
+  const countBadgeText = document.getElementById('galleryCountText');
 
-  if (loadMoreBtn && galleryGrid) {
-    loadMoreBtn.addEventListener('click', () => {
-      const hiddenItems = galleryGrid.querySelectorAll('.gallery-item-hidden');
-      const batchSize = 18;
-      const toShow = Array.from(hiddenItems).slice(0, batchSize);
-      
-      toShow.forEach(item => {
-        item.classList.remove('gallery-item-hidden');
-      });
-
-      const remaining = hiddenItems.length - toShow.length;
-      if (remainingCountEl) remainingCountEl.textContent = remaining;
-
-      if (remaining <= 0) {
-        const dict = translations[document.documentElement.lang || 'en'] || translations.en;
-        loadMoreBtn.textContent = dict.showing_all_photos || 'Showing All 155 Photos';
-        loadMoreBtn.disabled = true;
-        loadMoreBtn.style.opacity = '0.7';
-        loadMoreBtn.style.cursor = 'default';
-      }
-    });
-  }
-
-  // Lightbox Modal Navigation with 155 Photos & Mobile Swipe Support
   const lightboxModal = document.getElementById('lightboxModal');
   const lightboxImg = document.getElementById('lightboxImg');
   const lightboxClose = document.getElementById('lightboxClose');
@@ -993,78 +968,216 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxNext = document.getElementById('lightboxNext');
   const lightboxCounter = document.getElementById('lightboxCounter');
 
-  if (lightboxModal && lightboxImg && lightboxClose) {
-    const allGalleryItems = Array.from(document.querySelectorAll('.gallery-item'));
-    const allImageUrls = allGalleryItems.map(item => item.getAttribute('data-full')).filter(Boolean);
-    let currentIndex = 0;
+  let allGalleryData = [];
+  let currentCategory = 'all';
+  let filteredData = [];
+  let visibleCount = 24;
+  let currentLightboxIdx = 0;
+  const BATCH_SIZE = 24;
 
-    const showImageAt = (index) => {
-      if (index < 0) index = allImageUrls.length - 1;
-      if (index >= allImageUrls.length) index = 0;
-      currentIndex = index;
-      lightboxImg.src = allImageUrls[currentIndex];
-      if (lightboxCounter) {
-        lightboxCounter.textContent = `${currentIndex + 1} / ${allImageUrls.length}`;
-      }
-    };
+  const updateTabIndicator = (activeTab) => {
+    if (!tabIndicator || !activeTab) return;
+    const parent = activeTab.parentElement;
+    if (!parent) return;
+    const tabRect = activeTab.getBoundingClientRect();
+    const parentRect = parent.getBoundingClientRect();
+    const leftOffset = tabRect.left - parentRect.left + parent.scrollLeft;
+    tabIndicator.style.left = `${leftOffset}px`;
+    tabIndicator.style.width = `${tabRect.width}px`;
+  };
 
-    const openLightbox = (url) => {
-      const foundIdx = allImageUrls.indexOf(url);
-      showImageAt(foundIdx >= 0 ? foundIdx : 0);
-      lightboxModal.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    };
+  const createGalleryItemEl = (p) => {
+    const fig = document.createElement('figure');
+    fig.className = 'gallery-item';
+    fig.setAttribute('data-id', p.id);
+    fig.setAttribute('data-cat', p.category || 'Facility');
+    fig.setAttribute('data-full', p.full);
+    fig.setAttribute('tabindex', '0');
+    fig.setAttribute('role', 'button');
+    fig.setAttribute('aria-label', p.alt || 'Abu Huraira World Gym photo');
 
-    const closeLightbox = () => {
-      lightboxModal.classList.remove('open');
-      lightboxImg.src = '';
-      document.body.style.overflow = '';
-    };
+    const aspectWrap = document.createElement('div');
+    aspectWrap.className = 'gallery-aspect-wrap';
+    aspectWrap.style.aspectRatio = `${p.width || 1200} / ${p.height || 800}`;
+    aspectWrap.style.backgroundColor = p.dominantColor || '#141b24';
 
-    allGalleryItems.forEach((item) => {
-      item.addEventListener('click', () => {
-        const fullSrc = item.getAttribute('data-full');
-        if (fullSrc) openLightbox(fullSrc);
-      });
+    const img = document.createElement('img');
+    img.src = p.thumb;
+    img.alt = p.alt || 'Gym photo';
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    img.className = 'gallery-thumb';
+
+    const overlay = document.createElement('div');
+    overlay.className = 'gallery-item-overlay';
+    overlay.innerHTML = `
+      <span class="gallery-expand-icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+      </span>
+      <span class="gallery-item-cat">${p.category || 'Facility'}</span>
+    `;
+
+    aspectWrap.appendChild(img);
+    aspectWrap.appendChild(overlay);
+    fig.appendChild(aspectWrap);
+
+    fig.addEventListener('click', () => {
+      openLightboxByPhotoId(p.id);
     });
 
-    document.querySelectorAll('.stream-item').forEach(item => {
-      item.addEventListener('click', () => {
-        const fullSrc = item.getAttribute('data-full');
-        if (fullSrc) openLightbox(fullSrc);
-      });
+    fig.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openLightboxByPhotoId(p.id);
+      }
+    });
+
+    return fig;
+  };
+
+  const renderCurrentBatch = (isAppend = false) => {
+    if (!galleryGrid) return;
+    if (!isAppend) {
+      galleryGrid.innerHTML = '';
+      galleryGrid.style.opacity = '0.5';
+      setTimeout(() => { galleryGrid.style.opacity = '1'; }, 50);
+    }
+
+    const start = isAppend ? visibleCount - BATCH_SIZE : 0;
+    const batch = filteredData.slice(start, visibleCount);
+    const fragment = document.createDocumentFragment();
+
+    batch.forEach(p => {
+      fragment.appendChild(createGalleryItemEl(p));
+    });
+
+    galleryGrid.appendChild(fragment);
+
+    if (loadMoreWrap) {
+      if (visibleCount >= filteredData.length) {
+        loadMoreWrap.classList.add('hidden');
+      } else {
+        loadMoreWrap.classList.remove('hidden');
+      }
+    }
+  };
+
+  const setCategory = (cat) => {
+    currentCategory = cat;
+    if (cat === 'all') {
+      filteredData = allGalleryData.filter(p => !p.hidden);
+    } else {
+      filteredData = allGalleryData.filter(p => !p.hidden && p.category.toLowerCase() === cat.toLowerCase());
+    }
+
+    visibleCount = Math.min(BATCH_SIZE, filteredData.length);
+    renderCurrentBatch(false);
+
+    galleryTabs.forEach(tab => {
+      const isMatch = (tab.getAttribute('data-category') || '').toLowerCase() === cat.toLowerCase();
+      tab.classList.toggle('active', isMatch);
+      if (isMatch) updateTabIndicator(tab);
+    });
+  };
+
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', () => {
+      if (visibleCount < filteredData.length) {
+        visibleCount = Math.min(visibleCount + BATCH_SIZE, filteredData.length);
+        renderCurrentBatch(true);
+      }
+    });
+  }
+
+  galleryTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const cat = tab.getAttribute('data-category');
+      if (cat) setCategory(cat);
+    });
+  });
+
+  // Lightbox implementation
+  const prefetchImg = (url) => {
+    if (!url) return;
+    const img = new Image();
+    img.src = url;
+  };
+
+  const updateLightboxView = (idx) => {
+    if (!filteredData.length) return;
+    if (idx < 0) idx = filteredData.length - 1;
+    if (idx >= filteredData.length) idx = 0;
+    currentLightboxIdx = idx;
+
+    const currentPhoto = filteredData[currentLightboxIdx];
+    if (!currentPhoto) return;
+
+    if (lightboxImg) {
+      lightboxImg.src = currentPhoto.full;
+      lightboxImg.alt = currentPhoto.alt || 'Abu Huraira World Gym full size photo';
+    }
+
+    if (lightboxCounter) {
+      lightboxCounter.textContent = `${currentLightboxIdx + 1} / ${filteredData.length}`;
+    }
+
+    // Prefetch previous and next
+    const prevIdx = (currentLightboxIdx - 1 + filteredData.length) % filteredData.length;
+    const nextIdx = (currentLightboxIdx + 1) % filteredData.length;
+    prefetchImg(filteredData[prevIdx]?.full);
+    prefetchImg(filteredData[nextIdx]?.full);
+  };
+
+  const openLightboxByPhotoId = (id) => {
+    const foundIdx = filteredData.findIndex(p => p.id === id);
+    if (foundIdx >= 0) {
+      updateLightboxView(foundIdx);
+    } else {
+      updateLightboxView(0);
+    }
+    if (lightboxModal) {
+      lightboxModal.classList.add('open');
+      lightboxModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      if (lightboxClose) lightboxClose.focus();
+    }
+  };
+
+  const closeLightbox = () => {
+    if (lightboxModal) {
+      lightboxModal.classList.remove('open');
+      lightboxModal.setAttribute('aria-hidden', 'true');
+      if (lightboxImg) lightboxImg.src = '';
+      document.body.style.overflow = '';
+    }
+  };
+
+  if (lightboxClose) {
+    lightboxClose.addEventListener('click', closeLightbox);
+  }
+
+  if (lightboxModal) {
+    lightboxModal.addEventListener('click', (e) => {
+      if (e.target === lightboxModal || e.target.classList.contains('lightbox-backdrop') || e.target.id === 'lightboxImgWrapper') {
+        closeLightbox();
+      }
     });
 
     if (lightboxNext) {
       lightboxNext.addEventListener('click', (e) => {
         e.stopPropagation();
-        showImageAt(currentIndex + 1);
+        updateLightboxView(currentLightboxIdx + 1);
       });
     }
 
     if (lightboxPrev) {
       lightboxPrev.addEventListener('click', (e) => {
         e.stopPropagation();
-        showImageAt(currentIndex - 1);
+        updateLightboxView(currentLightboxIdx - 1);
       });
     }
 
-    lightboxClose.addEventListener('click', closeLightbox);
-    lightboxModal.addEventListener('click', (e) => {
-      if (e.target === lightboxModal || e.target === lightboxImg.parentElement) {
-        closeLightbox();
-      }
-    });
-
-    // Keyboard navigation
-    window.addEventListener('keydown', (e) => {
-      if (!lightboxModal.classList.contains('open')) return;
-      if (e.key === 'ArrowRight') showImageAt(currentIndex + 1);
-      if (e.key === 'ArrowLeft') showImageAt(currentIndex - 1);
-      if (e.key === 'Escape') closeLightbox();
-    });
-
-    // Touch Swipe navigation on mobile
+    // Touch swipe handling
     let touchStartX = 0;
     let touchEndX = 0;
     lightboxModal.addEventListener('touchstart', (e) => {
@@ -1074,10 +1187,77 @@ document.addEventListener('DOMContentLoaded', () => {
     lightboxModal.addEventListener('touchend', (e) => {
       touchEndX = e.changedTouches[0].screenX;
       const diff = touchEndX - touchStartX;
-      if (Math.abs(diff) > 50) {
-        if (diff < 0) showImageAt(currentIndex + 1); // Swipe left -> Next
-        else showImageAt(currentIndex - 1); // Swipe right -> Prev
+      if (Math.abs(diff) > 45) {
+        if (diff < 0) {
+          updateLightboxView(currentLightboxIdx + 1); // Swipe left -> next
+        } else {
+          updateLightboxView(currentLightboxIdx - 1); // Swipe right -> prev
+        }
       }
     }, { passive: true });
+
+    // Keyboard navigation
+    window.addEventListener('keydown', (e) => {
+      if (!lightboxModal.classList.contains('open')) return;
+      if (e.key === 'ArrowRight') updateLightboxView(currentLightboxIdx + 1);
+      if (e.key === 'ArrowLeft') updateLightboxView(currentLightboxIdx - 1);
+      if (e.key === 'Escape') closeLightbox();
+    });
   }
+
+  // Load gallery data from gallery.json
+  fetch('gallery.json')
+    .then(r => r.json())
+    .then(data => {
+      if (Array.isArray(data) && data.length) {
+        allGalleryData = data.filter(p => !p.hidden);
+        filteredData = allGalleryData;
+
+        // Update category counts on tabs
+        const catCounts = { all: allGalleryData.length };
+        allGalleryData.forEach(p => {
+          const c = p.category;
+          catCounts[c] = (catCounts[c] || 0) + 1;
+        });
+
+        galleryTabs.forEach(tab => {
+          const cat = tab.getAttribute('data-category');
+          const countSpan = tab.querySelector('.tab-count');
+          if (countSpan && cat) {
+            const count = cat === 'all' ? catCounts.all : (catCounts[cat] || 0);
+            countSpan.textContent = `(${count})`;
+          }
+        });
+
+        if (countBadgeText) {
+          countBadgeText.textContent = `${allGalleryData.length}+ Real Gym Photos`;
+        }
+
+        // Attach click listeners to static HTML gallery items already rendered
+        document.querySelectorAll('#mainGallery .gallery-item').forEach(item => {
+          const id = item.getAttribute('data-id');
+          item.addEventListener('click', () => {
+            if (id) openLightboxByPhotoId(id);
+          });
+          item.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              if (id) openLightboxByPhotoId(id);
+            }
+          });
+        });
+
+        // Initialize active tab indicator
+        const activeTab = document.querySelector('.gallery-tab.active');
+        if (activeTab) updateTabIndicator(activeTab);
+      }
+    })
+    .catch(err => {
+      console.warn('Could not load gallery.json:', err);
+    });
+
+  window.addEventListener('resize', () => {
+    const activeTab = document.querySelector('.gallery-tab.active');
+    if (activeTab) updateTabIndicator(activeTab);
+  });
 });
