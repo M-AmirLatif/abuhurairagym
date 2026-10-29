@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abu-huraira-world-gym.vercel.app/sitemap.xml

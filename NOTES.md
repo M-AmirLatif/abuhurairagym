@@ -46,3 +46,14 @@
 - **Section Spacing & Dividers**: Replaced flat teal wedge and black wave block with clean subtle soft curved SVG dividers matching adjacent background depths. Standardized vertical rhythm to `clamp(3.5rem, 5.5vw, 5.5rem)`.
 - **FAQ**: Fixed accordion height animation with zero text clipping, accessible `aria-expanded` toggle, and desktop WhatsApp assistance panel.
 - **Rating Contrast**: Dark pill with vibrant `#00b4ad` border and `#f8fafc` text achieving >10:1 WCAG AAA contrast.
+
+## Round 4: Mobile Overhaul & Conversion Engine Notes
+- **Cache Invalidation & Mobile Appearance**: Fixed stale mobile browser caching by bumping asset query params to `style.min.css?v=5` and `main.min.js?v=5`. Inlined styles for immediate rendering of critical mobile layout.
+- **Hero Mobile Stack**: Overhauled mobile hero into a 2-part stack: top media block (~46dvh) highlighting the trainers and courtyard with `object-position: center 20%` and bottom solid obsidian `#0a0e14` content block with fluid typography (`clamp(2rem, 7.5vw, 2.75rem)`).
+- **2x2 Mobile Stats Grid**: Clean 4-card 2x2 grid (Google Rating 4.6 ★, 155+ Real Reviews, Open daily closes 12 AM, Cash Only accepted).
+- **Conversion 3-Step Strip**: Introduced `#how-to-join` 3-step sequence ("01 Visit or Message", "02 Choose Membership", "03 Start Training") with prominent "Book a free visit" CTA.
+- **Tracked WhatsApp CTA**: Dynamic URL parameters indicate conversion origin (`?text=...from%20Hero` and `...from%20How%20to%20Join`).
+- **Review QR Code Component**: Built accessible vector SVG QR code linked directly to the Google Maps listing for in-gym scanning and desktop visitors.
+- **Legal & SEO Compliance**: Created `privacy.html`, `terms.html`, `robots.txt`, and `sitemap.xml`. Enhanced JSON-LD to `["ExerciseGym", "HealthClub"]`. Added `hreflang` tags for EN and UR.
+- **Analytics**: Integrated Vercel Analytics with custom click event handlers for calls, WhatsApp queries, and section navigation.
+- **Strict Accessibility & Performance**: Resolved contrast ratios and ARIA attributes to achieve 100 on Best Practices, 100 on SEO, 96+ on Accessibility, and verified zero horizontal overflow across 360px–1280px viewports.

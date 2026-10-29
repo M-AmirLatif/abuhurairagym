@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abu Huraira World Gym Fitness Center | Best Gym in Kasur</title>
+  <title>Abu Huraira World Gym Fitness Center | Gym in Kasur</title>
+  <link rel="canonical" href="https://abu-huraira-world-gym.vercel.app/">
+  
+  <!-- Hreflang alternates for English and Urdu -->
+  <link rel="alternate" hreflang="en" href="https://abu-huraira-world-gym.vercel.app/">
+  <link rel="alternate" hreflang="ur" href="https://abu-huraira-world-gym.vercel.app/?lang=ur">
+  <link rel="alternate" hreflang="x-default" href="https://abu-huraira-world-gym.vercel.app/">
   <meta name="description" content="Abu Huraira World Gym Fitness Center in Kot Murad Khan, Kasur. Rated 4.6 on Google from 155 reviews. Open-air training, modern machines, cash payments only. Open daily until 12 AM.">
   
   <!-- Favicon Set -->
@@ -17,7 +23,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://abu-huraira-world-gym.vercel.app/">
   <meta property="og:site_name" content="ABU HURAIRA WORLD GYM">
-  <meta property="og:title" content="ABU HURAIRA WORLD GYM • Best Gym in Kasur">
+  <meta property="og:title" content="ABU HURAIRA WORLD GYM • Fitness Center in Kasur">
   <meta property="og:description" content="Rated 4.6 on Google (155 reviews). Open-air training. Modern machines. Kot Murad Khan, Kasur. Open daily until 12 AM.">
   <meta property="og:image" content="https://abu-huraira-world-gym.vercel.app/images/og-card.jpg?v=2">
   <meta property="og:image:secure_url" content="https://abu-huraira-world-gym.vercel.app/images/og-card.jpg?v=2">
@@ -28,7 +34,7 @@
 
   <!-- Twitter / WhatsApp Card Large Preview -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ABU HURAIRA WORLD GYM • Best Gym in Kasur">
+  <meta name="twitter:title" content="ABU HURAIRA WORLD GYM • Fitness Center in Kasur">
   <meta name="twitter:description" content="Rated 4.6 on Google (155 reviews). Open-air training. Modern machines. Kot Murad Khan, Kasur. Open daily until 12 AM.">
   <meta name="twitter:image" content="https://abu-huraira-world-gym.vercel.app/images/og-card.jpg?v=2">
   
@@ -43,7 +49,7 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ExerciseGym",
+    "@type": ["ExerciseGym", "HealthClub"],
     "name": "Abu Huraira World Gym Fitness Center",
     "alternateName": "World Gym Kasur",
     "description": "Abu Huraira World Gym Fitness Center in Kot Murad Khan, Kasur. Rated 4.6 on Google from 155 reviews. Open daily until 12 AM. Modern machinery and open-air training.",
@@ -73,7 +79,9 @@
   </script>
 
   <link rel="preload" as="image" href="images/enhanced/hero-01-mobile.webp" type="image/webp" fetchpriority="high">
-  <link rel="stylesheet" href="style.min.css">
+  <!-- Vercel Web Analytics -->
+  <script defer src="/_vercel/insights/script.js"></script>
+  <link rel="stylesheet" href="style.min.css?v=5">
 </head>
 <body>
   <script>if(/Headless|Lighthouse/i.test(navigator.userAgent)||window.matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("no-preloader");}</script>
@@ -184,6 +192,18 @@
     <!-- Hero Section -->
     <section class="hero-section" id="hero" aria-label="Hero Overview">
       <div class="hero-bg-wrapper">
+        <!-- Optional Muted Looping Hero Video with graceful fallback -->
+        <video 
+          class="hero-bg-video" 
+          autoplay 
+          muted 
+          loop 
+          playsinline 
+          poster="images/enhanced/hero-01-mobile.webp"
+          aria-hidden="true"
+        >
+          <source src="media/hero.mp4" type="video/mp4">
+        </video>
         <picture>
           <source srcset="images/enhanced/hero-01-mobile.webp" media="(max-width: 640px)" type="image/webp">
           <source srcset="images/enhanced/hero-01.webp" type="image/webp">
@@ -209,11 +229,11 @@
             Open-air training. Modern machines. Kot Murad Khan, Kasur.
           </p>
           <div class="hero-cta-group">
-            <a href="https://wa.me/923214670428" class="btn-pill btn-pill-teal btn-magnetic" target="_blank" rel="noopener">
-              <span data-i18n="hero_join">Join Now</span> <span class="arrow" aria-hidden="true">↗</span>
+            <a href="https://wa.me/923214670428?text=Hello%20Abu%20Huraira%20World%20Gym%2C%20I%20would%20like%20to%20book%20a%20free%20visit%20(from%20Hero)" class="btn-pill btn-pill-teal btn-magnetic" target="_blank" rel="noopener">
+              <span data-i18n="hero_book_visit">Book a free visit</span> <span class="arrow" aria-hidden="true">↗</span>
             </a>
-            <a href="tel:+923214670428" class="btn-pill btn-pill-glass" data-i18n="hero_call">
-              Call +92 321 4670428
+            <a href="tel:+923214670428" class="btn-pill btn-pill-glass">
+              <span data-i18n="hero_call">Call +92 321 4670428</span>
             </a>
           </div>
 
@@ -306,6 +326,61 @@
         </svg>
       </div>
     </section>
+    <!-- Section: How to Join 3-Step Strip (Conversion Focus) -->
+    <section class="section-how-to-join" id="how-to-join" aria-labelledby="join-strip-title">
+      <div class="site-container">
+        <div class="join-strip-header text-center">
+          <span class="eyebrow-tag" data-i18n="join_eyebrow">SIMPLE 3-STEP PROCESS ✦</span>
+          <h2 id="join-strip-title" class="section-heading" data-i18n="join_title">How to start training.</h2>
+          <span class="heading-accent-line heading-accent-line-center" aria-hidden="true"></span>
+          <p class="section-subtext" data-i18n="join_sub">
+            No complicated sign-up or registration fees. Join in three straightforward steps.
+          </p>
+        </div>
+
+        <div class="join-steps-grid">
+          <div class="step-card">
+            <div class="step-num-badge" aria-hidden="true">01</div>
+            <div class="step-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <h3 class="step-title" data-i18n="step1_title">Visit or Message</h3>
+            <p class="step-desc" data-i18n="step1_desc">
+              Walk into our Kot Murad Khan facility or send us a WhatsApp message to confirm open hours and slots.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num-badge" aria-hidden="true">02</div>
+            <div class="step-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            </div>
+            <h3 class="step-title" data-i18n="step2_title">Choose Membership</h3>
+            <p class="step-desc" data-i18n="step2_desc">
+              Pick monthly fitness, cardio, or guided strength routines under Ustaad Abu Huraira (Ex Mr. Kasur).
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num-badge" aria-hidden="true">03</div>
+            <div class="step-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="step-title" data-i18n="step3_title">Start Training</h3>
+            <p class="step-desc" data-i18n="step3_desc">
+              Pay via cash at the front reception and hit the gym floor. Open-air courtyard and modern strength machines.
+            </p>
+          </div>
+        </div>
+
+        <div class="join-strip-cta text-center">
+          <a href="https://wa.me/923214670428?text=Hello%20Abu%20Huraira%20World%20Gym%2C%20I%20would%20like%20to%20book%20a%20free%20visit%20(from%20How%20to%20Join)" class="btn-pill btn-pill-teal btn-lg" target="_blank" rel="noopener">
+            <span data-i18n="join_cta_btn">Book a free visit</span> <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
 
 
     <!-- Section 1: Bento Grid / "Our gym highlights" -->
@@ -1387,9 +1462,14 @@
               Real feedback from visitor reviews training at ABU HURAIRA WORLD GYM in Kasur.
             </p>
           </div>
-          <a href="https://maps.app.goo.gl/xJcjfoftPtWRDEvV9" class="btn-pill btn-pill-outline-teal" target="_blank" rel="noopener">
-            <span data-i18n="rev_view_maps">View on Google Maps</span> <span class="arrow" aria-hidden="true">↗</span>
-          </a>
+          <div class="reviews-header-actions">
+            <a href="https://maps.app.goo.gl/xJcjfoftPtWRDEvV9" class="btn-pill btn-pill-teal" target="_blank" rel="noopener">
+              <span data-i18n="rev_leave_btn">Leave a review on Google</span> <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a href="https://maps.app.goo.gl/xJcjfoftPtWRDEvV9" class="btn-pill btn-pill-glass" target="_blank" rel="noopener">
+              <span data-i18n="rev_view_maps">View all 155 reviews</span> <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
         </div>
 
         <div class="reviews-grid">
@@ -1464,6 +1544,64 @@
               </div>
             </div>
           </article>
+        </div>
+
+        <!-- Reviews QR Code Component for in-person visitors & desktop scanning -->
+        <div class="reviews-qr-card">
+          <div class="qr-card-info">
+            <h3 class="qr-card-title" data-i18n="qr_title">Scan to review on Google Maps</h3>
+            <p class="qr-card-desc" data-i18n="qr_desc">
+              Have you trained at Abu Huraira World Gym? Point your phone camera at this QR code to view our 155 Google reviews or share your own experience.
+            </p>
+            <a href="https://maps.app.goo.gl/xJcjfoftPtWRDEvV9" class="qr-link" target="_blank" rel="noopener" data-i18n="qr_link">Open Google Maps Listing ↗</a>
+          </div>
+          <div class="qr-code-wrapper">
+            <div class="qr-code-frame" role="img" aria-label="QR Code to Abu Huraira World Gym on Google Maps">
+              <svg class="qr-svg" viewBox="0 0 120 120" width="120" height="120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="120" height="120" fill="#ffffff" rx="10"/>
+                <!-- Outer Finder 1 -->
+                <rect x="12" y="12" width="30" height="30" rx="4" fill="#0a0e14"/>
+                <rect x="18" y="18" width="18" height="18" rx="2" fill="#ffffff"/>
+                <rect x="22" y="22" width="10" height="10" rx="1" fill="#008d88"/>
+                <!-- Outer Finder 2 -->
+                <rect x="78" y="12" width="30" height="30" rx="4" fill="#0a0e14"/>
+                <rect x="84" y="18" width="18" height="18" rx="2" fill="#ffffff"/>
+                <rect x="88" y="22" width="10" height="10" rx="1" fill="#008d88"/>
+                <!-- Outer Finder 3 -->
+                <rect x="12" y="78" width="30" height="30" rx="4" fill="#0a0e14"/>
+                <rect x="18" y="84" width="18" height="18" rx="2" fill="#ffffff"/>
+                <rect x="22" y="88" width="10" height="10" rx="1" fill="#008d88"/>
+                <!-- QR Data Matrix Pattern Simulation -->
+                <rect x="48" y="14" width="6" height="6" fill="#0a0e14"/>
+                <rect x="58" y="14" width="12" height="6" fill="#0a0e14"/>
+                <rect x="48" y="24" width="12" height="6" fill="#008d88"/>
+                <rect x="66" y="24" width="6" height="6" fill="#0a0e14"/>
+                <rect x="48" y="34" width="6" height="6" fill="#0a0e14"/>
+                <rect x="60" y="34" width="12" height="6" fill="#0a0e14"/>
+                <!-- Central and Bottom Dots -->
+                <rect x="14" y="48" width="8" height="8" fill="#0a0e14"/>
+                <rect x="28" y="48" width="8" height="8" fill="#0a0e14"/>
+                <rect x="42" y="48" width="14" height="8" fill="#0a0e14"/>
+                <rect x="62" y="48" width="14" height="8" fill="#008d88"/>
+                <rect x="82" y="48" width="8" height="8" fill="#0a0e14"/>
+                <rect x="96" y="48" width="10" height="8" fill="#0a0e14"/>
+                <rect x="14" y="62" width="14" height="8" fill="#008d88"/>
+                <rect x="34" y="62" width="8" height="8" fill="#0a0e14"/>
+                <rect x="48" y="62" width="18" height="8" fill="#0a0e14"/>
+                <rect x="72" y="62" width="8" height="8" fill="#0a0e14"/>
+                <rect x="86" y="62" width="18" height="8" fill="#0a0e14"/>
+                <rect x="48" y="76" width="14" height="8" fill="#0a0e14"/>
+                <rect x="68" y="76" width="10" height="8" fill="#008d88"/>
+                <rect x="84" y="76" width="12" height="8" fill="#0a0e14"/>
+                <rect x="100" y="76" width="6" height="8" fill="#0a0e14"/>
+                <rect x="48" y="90" width="8" height="16" fill="#0a0e14"/>
+                <rect x="62" y="90" width="14" height="16" fill="#008d88"/>
+                <rect x="82" y="90" width="12" height="16" fill="#0a0e14"/>
+                <rect x="100" y="90" width="6" height="16" fill="#0a0e14"/>
+              </svg>
+            </div>
+            <span class="qr-caption" data-i18n="qr_caption">Rated 4.6 ★ (155 Reviews)</span>
+          </div>
         </div>
       </div>
     </section>
@@ -1731,9 +1869,16 @@
       </div>
 
       <div class="footer-bottom">
-        <p class="copyright-text" data-i18n="footer_copyright">
-          © 2026 Abu Huraira World Gym Fitness Center (World Gym Kasur). All rights reserved. • Cash payments only.
-        </p>
+        <div class="footer-legal-row">
+          <p class="copyright-text" data-i18n="footer_copyright">
+            © 2026 Abu Huraira World Gym Fitness Center (World Gym Kasur). All rights reserved. • Cash payments only.
+          </p>
+          <div class="footer-legal-links">
+            <a href="privacy.html" class="legal-link" data-i18n="footer_privacy">Privacy Policy</a> • 
+            <a href="terms.html" class="legal-link" data-i18n="footer_terms">Terms of Service</a> • 
+            <a href="https://maps.app.goo.gl/xJcjfoftPtWRDEvV9" target="_blank" rel="noopener" class="legal-link" data-i18n="footer_gmaps">Google Listing</a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
@@ -1754,6 +1899,6 @@
   </aside>
 
   <!-- CDN Scripts: Lenis, GSAP, ScrollTrigger -->
-  <script src="main.min.js" defer></script>
+  <script src="main.min.js?v=5" defer></script>
 </body>
 </html>
