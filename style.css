@@ -1625,35 +1625,43 @@ button {
   display: flex;
   gap: 1.5rem;
   width: max-content;
+  align-items: stretch !important;
 }
 
 .facility-card {
   width: clamp(280px, 31vw, 400px);
   display: flex;
   flex-direction: column;
+  height: 100%;
   border-radius: var(--radius-xl);
-  transition: transform var(--transition-normal);
+  overflow: hidden;
+  background: rgba(18, 25, 36, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
 }
 
 .facility-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  border-color: rgba(0, 180, 173, 0.4);
+  box-shadow: 0 20px 35px -10px rgba(0, 141, 136, 0.2);
 }
 
 .facility-card-media {
   width: 100%;
   aspect-ratio: 4 / 3.4;
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
   overflow: hidden;
-  background-color: #f1f5f9;
-  margin-bottom: 1.5rem;
+  background-color: #121924;
+  margin-bottom: 0;
   box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
 }
 
 .facility-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
   transition: transform var(--transition-normal);
 }
 
@@ -1661,8 +1669,28 @@ button {
   transform: scale(1.05);
 }
 
+.facility-card:nth-child(1) .facility-img {
+  object-position: center 18% !important;
+}
+
+.facility-card:nth-child(2) .facility-img {
+  object-position: center 8% !important;
+}
+
+.facility-card:nth-child(3) .facility-img {
+  object-position: center 25% !important;
+}
+
+.facility-card:nth-child(4) .facility-img {
+  object-position: center 25% !important;
+}
+
+.facility-card:nth-child(5) .facility-img {
+  object-position: center 50% !important;
+}
+
 .facility-crop-resistance {
-  object-position: center 75%;
+  object-position: center 25% !important;
 }
 
 /* User Correction #1: Solid Teal Card for Juice Bar */
@@ -1697,22 +1725,28 @@ button {
 .facility-card-info {
   display: flex;
   flex-direction: column;
+  flex: 1;
   gap: 0.85rem;
   align-items: flex-start;
+  padding: 1.5rem 1.5rem 1.75rem 1.5rem;
 }
 
 .facility-title {
   font-size: 1.45rem;
   font-weight: 800;
-  color: var(--color-text-main);
+  color: #ffffff;
   letter-spacing: -0.02em;
 }
 
 .facility-desc {
   font-size: 0.95rem;
-  color: var(--color-text-muted);
+  color: #cbd5e1;
   line-height: 1.6;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.facility-card-info .btn-pill {
+  margin-top: auto !important;
 }
 
 /* Carousel Progress Bar */
@@ -4538,6 +4572,7 @@ html[dir="rtl"], body.lang-ur, [dir="rtl"] {
     gap: 1rem !important;
     width: max-content !important;
     padding-right: 1.5rem !important;
+    align-items: stretch !important;
   }
   .facility-card {
     width: 82vw !important;
