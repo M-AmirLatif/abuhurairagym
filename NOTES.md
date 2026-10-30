@@ -84,3 +84,11 @@ The following 7 photos have resolution under 500px in the source dataset:
      - The Masonry grid
      - The Lightbox modal and swipe navigation
   6. Rebuild minified assets and redeploy with `npx vercel --prod`.
+
+
+## Hidden Gallery Files (Pure Graphics with No Gym/People Content)
+Per Project Instructions (C.3), pure graphics without gym equipment, facilities, or members are marked 'hidden: true' in gallery.json:
+1. **gym_photo_011** (source: images/newimages/011.jpg):
+   - Content: Eid Mubarak greeting card ('عید مبارک' white Arabic calligraphy on black background).
+   - Status: hidden: true by default.
+   - How to unhide: In gallery.json, change 'hidden: true' to 'hidden: false' for item 'gym_photo_011'.

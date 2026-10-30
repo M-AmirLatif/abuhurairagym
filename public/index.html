@@ -71,7 +71,7 @@
   <link rel="preload" as="image" href="images/enhanced/hero-01-mobile.webp" type="image/webp" fetchpriority="high">
   <!-- Vercel Web Analytics -->
   <script defer src="/_vercel/insights/script.js"></script>
-  <link rel="stylesheet" href="style.min.css?v=14">
+  <link rel="stylesheet" href="style.min.css?v=24">
 </head>
 <body>
   <script>if(/Headless|Lighthouse/i.test(navigator.userAgent)||window.matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("no-preloader");}</script>
@@ -97,7 +97,6 @@
       <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
         <ul class="nav-list">
           <li><a href="#hero" class="nav-link active" data-i18n="nav_overview">Overview</a></li>
-          <li><a href="#highlights" class="nav-link" data-i18n="nav_highlights">Highlights</a></li>
           <li><a href="#facilities" class="nav-link" data-i18n="nav_facilities">Facilities</a></li>
           <li><a href="#gallery" class="nav-link" data-i18n="nav_gallery">Gallery</a></li>
           <li><a href="#membership" class="nav-link" data-i18n="nav_membership">Membership</a></li>
@@ -129,22 +128,26 @@
   <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
     <div class="mobile-drawer-inner">
       <ul class="mobile-nav-list">
-        <li><a href="#hero" class="mobile-nav-link"><span data-i18n="nav_overview">Overview</span><span class="nav-arrow" aria-hidden="true">›</span></a></li>
-        <li><a href="#highlights" class="mobile-nav-link"><span data-i18n="nav_highlights">Highlights</span><span class="nav-arrow" aria-hidden="true">›</span></a></li>
-        <li><a href="#facilities" class="mobile-nav-link"><span data-i18n="nav_facilities">Facilities</span><span class="nav-arrow" aria-hidden="true">›</span></a></li>
-        <li><a href="#gallery" class="mobile-nav-link"><span data-i18n="nav_gallery">Gallery</span><span class="nav-arrow" aria-hidden="true">›</span></a></li>
-        <li><a href="#membership" class="mobile-nav-link"><span data-i18n="nav_membership">Membership</span><span class="nav-arrow" aria-hidden="true">›</span></a></li>
-        <li><a href="#reviews" class="mobile-nav-link"><span data-i18n="nav_reviews">Reviews</span><span class="nav-arrow" aria-hidden="true">›</span></a></li>
-        <li><a href="#faq" class="mobile-nav-link"><span data-i18n="nav_faq">FAQ</span><span class="nav-arrow" aria-hidden="true">›</span></a></li>
-        <li><a href="#location" class="mobile-nav-link"><span data-i18n="nav_location">Location</span><span class="nav-arrow" aria-hidden="true">›</span></a></li>
+        <li><a href="#hero" class="mobile-nav-link"><span data-i18n="nav_overview">Overview</span><span class="nav-arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></span></a></li>
+        <li><a href="#facilities" class="mobile-nav-link"><span data-i18n="nav_facilities">Facilities</span><span class="nav-arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></span></a></li>
+        <li><a href="#gallery" class="mobile-nav-link"><span data-i18n="nav_gallery">Gallery</span><span class="nav-arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></span></a></li>
+        <li><a href="#membership" class="mobile-nav-link"><span data-i18n="nav_membership">Membership</span><span class="nav-arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></span></a></li>
+        <li><a href="#reviews" class="mobile-nav-link"><span data-i18n="nav_reviews">Reviews</span><span class="nav-arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></span></a></li>
+        <li><a href="#faq" class="mobile-nav-link"><span data-i18n="nav_faq">FAQ</span><span class="nav-arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></span></a></li>
+        <li><a href="#location" class="mobile-nav-link"><span data-i18n="nav_location">Location</span><span class="nav-arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></span></a></li>
       </ul>
       <div class="mobile-drawer-cta">
         <a href="https://wa.me/923214670428" class="btn-pill btn-pill-teal w-full" target="_blank" rel="noopener">
           <span data-i18n="nav_join_wa">Join on WhatsApp</span> <span class="arrow" aria-hidden="true">↗</span>
         </a>
         <a href="tel:+923214670428" class="btn-pill btn-pill-glass w-full">
-          <span data-i18n="nav_call">Call +92 321 4670428</span>
+          <span data-i18n="nav_call">Call <bdi dir="ltr">+92 321 4670428</bdi></span>
         </a>
+        <button type="button" class="lang-toggle-btn" id="mobileLangToggle" aria-label="EN / اردو" style="display: inline-flex; justify-content: center; width: 100%; margin-top: 0.5rem;">
+          <span class="lang-opt lang-en active">EN</span>
+          <span class="lang-sep">|</span>
+          <span class="lang-opt lang-ur">اردو</span>
+        </button>
       </div>
     </div>
   </div>
@@ -191,11 +194,11 @@
             Open-air training. Modern machines. Kot Murad Khan, Kasur.
           </p>
           <div class="hero-cta-group">
-            <a href="https://wa.me/923214670428?text=Hello%20Abu%20Huraira%20World%20Gym%2C%20I%20would%20like%20to%20book%20a%20free%20visit%20(from%20Hero)" class="btn-pill btn-pill-teal btn-magnetic" target="_blank" rel="noopener">
-              <span data-i18n="hero_book_visit">Book a free visit</span> <span class="arrow" aria-hidden="true">↗</span>
+            <a href="https://wa.me/923214670428?text=Hello%20Abu%20Huraira%20World%20Gym%2C%20I%20would%20like%20to%20visit%20the%20gym%20(from%20Hero)" class="btn-pill btn-pill-teal btn-magnetic" target="_blank" rel="noopener">
+              <span data-i18n="hero_book_visit">Visit us</span> <span class="arrow" aria-hidden="true">↗</span>
             </a>
             <a href="tel:+923214670428" class="btn-pill btn-pill-glass">
-              <span data-i18n="hero_call">Call +92 321 4670428</span>
+              <span data-i18n="hero_call">Call <bdi dir="ltr">+92 321 4670428</bdi></span>
             </a>
           </div>
 
@@ -257,88 +260,13 @@
         </a>
       </div>
 
-      <!-- Marquee Ticker Banner -->
-      <div class="ticker-banner" aria-hidden="true">
-        <div class="ticker-track">
-          <div class="ticker-item">
-            <span>HEALTH & FITNESS</span><span class="ticker-star">✦</span>
-            <span>ABU HURAIRA WORLD GYM</span><span class="ticker-star">✦</span>
-            <span>KOT MURAD KHAN, KASUR</span><span class="ticker-star">✦</span>
-            <span>4.6 ON GOOGLE (155 REVIEWS)</span><span class="ticker-star">✦</span>
-            <span>OPEN DAILY CLOSES 12 AM</span><span class="ticker-star">✦</span>
-            <span>NATURAL OPEN-AIR TRAINING</span><span class="ticker-star">✦</span>
-            <span>CASH PAYMENTS ONLY</span><span class="ticker-star">✦</span>
-          </div>
-          <div class="ticker-item" aria-hidden="true">
-            <span>HEALTH & FITNESS</span><span class="ticker-star">✦</span>
-            <span>ABU HURAIRA WORLD GYM</span><span class="ticker-star">✦</span>
-            <span>KOT MURAD KHAN, KASUR</span><span class="ticker-star">✦</span>
-            <span>4.6 ON GOOGLE (155 REVIEWS)</span><span class="ticker-star">✦</span>
-            <span>OPEN DAILY CLOSES 12 AM</span><span class="ticker-star">✦</span>
-            <span>NATURAL OPEN-AIR TRAINING</span><span class="ticker-star">✦</span>
-            <span>CASH PAYMENTS ONLY</span><span class="ticker-star">✦</span>
-          </div>
-        </div>
-      </div>
+      <!-- Subtle 2px Hero Bottom Accent Rule -->
+      <div class="hero-bottom-rule" aria-hidden="true"></div>
 
       <!-- Transition Divider: Hero -> Bento -->
       
     </section>
         <!-- Section: How to Join 3-Step Strip (Conversion Focus) -->
-    <section class="section-how-to-join" id="how-to-join" aria-labelledby="join-strip-title">
-      <div class="site-container">
-        <div class="join-strip-header">
-          <span class="eyebrow-tag" data-i18n="join_eyebrow">SIMPLE 3-STEP PROCESS ✦</span>
-          <h2 id="join-strip-title" class="section-heading" data-i18n="join_title">How to start training.</h2>
-          <span class="heading-accent-line" aria-hidden="true"></span>
-          <p class="section-subtext" data-i18n="join_sub">
-            Join in three straightforward steps.
-          </p>
-        </div>
-
-        <div class="join-steps-grid">
-          <div class="step-card">
-            <div class="step-num-badge" aria-hidden="true">01</div>
-            <div class="step-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-            </div>
-            <h3 class="step-title" data-i18n="step1_title">Visit or message us</h3>
-            <p class="step-desc" data-i18n="step1_desc">
-              Visit our gym in Kot Murad Khan or message us on WhatsApp.
-            </p>
-          </div>
-
-          <div class="step-card">
-            <div class="step-num-badge" aria-hidden="true">02</div>
-            <div class="step-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
-            </div>
-            <h3 class="step-title" data-i18n="step2_title">Ask about membership on WhatsApp</h3>
-            <p class="step-desc" data-i18n="step2_desc">
-              Ask about current membership options on WhatsApp. Cash payments only.
-            </p>
-          </div>
-
-          <div class="step-card">
-            <div class="step-num-badge" aria-hidden="true">03</div>
-            <div class="step-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            </div>
-            <h3 class="step-title" data-i18n="step3_title">Start training</h3>
-            <p class="step-desc" data-i18n="step3_desc">
-              Open daily, closes 12 AM. Open-air courtyard and modern machines.
-            </p>
-          </div>
-        </div>
-
-        <div class="join-strip-cta">
-          <a href="https://wa.me/923214670428?text=Hello%20Abu%20Huraira%20World%20Gym%2C%20I%20would%20like%20to%20book%20a%20free%20visit%20(from%20How%20to%20Join)" class="btn-pill btn-pill-teal btn-lg" target="_blank" rel="noopener">
-            <span data-i18n="join_cta_btn">Book a free visit</span> <span class="arrow" aria-hidden="true">↗</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
     <!-- Section 1: Bento Grid / "Our gym highlights" -->
         <!-- Merged High-Impact Facilities Section -->
     <section class="section-facilities" id="facilities" aria-labelledby="facilities-title">
@@ -356,10 +284,10 @@
           </div>
           <div class="carousel-nav-controls" aria-label="Facilities Carousel Controls">
             <button class="carousel-btn prev-btn" id="carouselPrev" aria-label="Previous slide">
-              <span aria-hidden="true">‹</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
             </button>
             <button class="carousel-btn next-btn" id="carouselNext" aria-label="Next slide">
-              <span aria-hidden="true">›</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
             </button>
           </div>
         </div>
@@ -373,7 +301,7 @@
               <div class="facility-card-media">
                 <img 
                   src="images/site/gym-01.jpg" 
-                  alt="Open-air cardio area at World Gym Kasur" 
+                  alt="Photo from World Gym Kasur" 
                   class="facility-img"
                   loading="lazy"
                 >
@@ -384,7 +312,7 @@
                 </div>
                 <h3 class="facility-title" data-i18n="card1_title">Open-air cardio area</h3>
                 <p class="facility-desc" data-i18n="fac2_desc">
-                  Motorized treadmills and running stations in the open courtyard training area with fresh natural airflow.
+                  Motorized treadmills and running stations in the open courtyard training area.
                 </p>
                 <a href="https://wa.me/923214670428" class="btn-pill btn-pill-teal" target="_blank" rel="noopener">
                   <span data-i18n="card_inquire_wa">Inquire on WhatsApp</span> <span class="arrow" aria-hidden="true">↗</span>
@@ -397,7 +325,7 @@
               <div class="facility-card-media">
                 <img 
                   src="images/site/hero-02.jpg" 
-                  alt="Guidance under Ustaad Abu Huraira at World Gym Kasur" 
+                  alt="Photo from World Gym Kasur" 
                   class="facility-img"
                   loading="lazy"
                 >
@@ -421,7 +349,7 @@
               <div class="facility-card-media">
                 <img 
                   src="images/site/gym-02.jpg" 
-                  alt="Modern strength apparatus at World Gym Kasur" 
+                  alt="Photo from World Gym Kasur" 
                   class="facility-img"
                   loading="lazy"
                 >
@@ -432,7 +360,7 @@
                 </div>
                 <h3 class="facility-title" data-i18n="card3_title">Modern strength apparatus</h3>
                 <p class="facility-desc" data-i18n="fac_apparatus_desc">
-                  Automated resistance machines, cables, and pin-select strength gear to target every muscle group safely.
+                  Modern machines to train on.
                 </p>
                 <a href="https://wa.me/923214670428" class="btn-pill btn-pill-teal" target="_blank" rel="noopener">
                   <span data-i18n="card_inquire_wa">Inquire on WhatsApp</span> <span class="arrow" aria-hidden="true">↗</span>
@@ -440,53 +368,7 @@
               </div>
             </div>
 
-            <!-- Facility Card 4: Resistance Training Machines -->
-            <div class="facility-card">
-              <div class="facility-card-media">
-                <img 
-                  src="images/site/gym-03.jpg" 
-                  alt="Resistance machines at World Gym Kasur" 
-                  class="facility-img"
-                  loading="lazy"
-                >
-              </div>
-              <div class="facility-card-info">
-                <div class="card-badge-top">
-                  <span class="pill-tag" data-i18n="badge_apparatus">Resistance ✦</span>
-                </div>
-                <h3 class="facility-title" data-i18n="fac3_title">Resistance machines</h3>
-                <p class="facility-desc" data-i18n="fac3_desc">
-                  Modern resistance equipment and training stations at World Gym Kasur.
-                </p>
-                <a href="https://wa.me/923214670428" class="btn-pill btn-pill-teal" target="_blank" rel="noopener">
-                  <span data-i18n="card_inquire_wa">Inquire on WhatsApp</span> <span class="arrow" aria-hidden="true">↗</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Facility Card 5: Gym Floor & Community -->
-            <div class="facility-card">
-              <div class="facility-card-media">
-                <img 
-                  src="images/gallery/indoor-gym-floor.jpg" 
-                  alt="Gym floor at World Gym Kasur" 
-                  class="facility-img"
-                  loading="lazy"
-                >
-              </div>
-              <div class="facility-card-info">
-                <div class="card-badge-top">
-                  <span class="pill-tag" data-i18n="badge_facilities">Gym Floor ✦</span>
-                </div>
-                <h3 class="facility-title" data-i18n="fac1_title">Gym floor</h3>
-                <p class="facility-desc" data-i18n="fac1_desc">
-                  Modern machines and an open area to train on. Open daily until 12 AM. Cash payments only.
-                </p>
-                <a href="https://wa.me/923214670428" class="btn-pill btn-pill-teal" target="_blank" rel="noopener">
-                  <span data-i18n="card_inquire_wa">Inquire on WhatsApp</span> <span class="arrow" aria-hidden="true">↗</span>
-                </a>
-              </div>
-            </div>
+            
 
           </div>
         </div>
@@ -495,28 +377,6 @@
       <!-- Clean Soft Curved Transition Divider: Facilities -> Banner -->
       
     </section>
-
-        <!-- Mid-Page Motivational Banner (Single Centered Column) -->
-    <section class="section-banner-cta banner-solid-gradient" aria-label="Motivational Call to Action">
-      <div class="site-container">
-        <div class="banner-cta-content text-center">
-          <span class="banner-badge">ABU HURAIRA WORLD GYM</span>
-          <h2 class="banner-headline" data-i18n="banner_hl">START YOUR FITNESS JOURNEY TODAY.</h2>
-          <p class="banner-subline" data-i18n="banner_sub">
-            Train with dedicated guidance, quality resistance machines, and an open courtyard atmosphere in Kot Murad Khan.
-          </p>
-          <div class="banner-actions banner-actions-centered">
-            <a href="https://wa.me/923214670428" class="btn-pill btn-pill-white" target="_blank" rel="noopener">
-              <span>Join Now</span> <span class="arrow" aria-hidden="true">↗</span>
-            </a>
-            <a href="tel:+923214670428" class="btn-pill btn-pill-glass">
-              <span>Call +92 321 4670428</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Section: Membership (One Wide Card per User Correction #2) -->
     <section class="section-membership" id="membership" aria-labelledby="membership-title">
       <div class="section-bg-watermark" aria-hidden="true">POWER</div>
@@ -587,167 +447,8 @@
     </section>
 
         <!-- Section: Gallery (Masonry & Lightbox per User Correction #7) -->
-        <!-- Hero Strip: Dual Counter-Scrolling Infinite Tracks -->
-    <section class="gallery-hero-strip" id="galleryStrip" aria-label="Gym Activity and Equipment Preview" dir="ltr">
-      <div class="strip-fade strip-fade-left" aria-hidden="true"></div>
-      <div class="strip-fade strip-fade-right" aria-hidden="true"></div>
-      
-      <!-- Track 1: Scrolls Left -->
-      <div class="strip-row strip-row-top" tabindex="0" aria-label="Gym photos preview row 1">
-        <div class="strip-track strip-track-left">
-            <div class="strip-tile" style="--ar: 0.449;">
-              <img src="gallery_assets/thumbs/gym_photo_001_thumb.webp" alt="Gym facility and training area at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.750;">
-              <img src="gallery_assets/thumbs/gym_photo_002_thumb.webp" alt="Strength and cardio fitness apparatus at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_003_thumb.webp" alt="Workout and physical conditioning session at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.562;">
-              <img src="gallery_assets/thumbs/gym_photo_004_thumb.webp" alt="Gym members and training community at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.562;">
-              <img src="gallery_assets/thumbs/gym_photo_005_thumb.webp" alt="Fitness gathering and bodybuilding showcase event" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.562;">
-              <img src="gallery_assets/thumbs/gym_photo_006_thumb.webp" alt="Gym facility and training area at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.750;">
-              <img src="gallery_assets/thumbs/gym_photo_007_thumb.webp" alt="Strength and cardio fitness apparatus at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.070;">
-              <img src="gallery_assets/thumbs/gym_photo_008_thumb.webp" alt="Workout and physical conditioning session at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_009_thumb.webp" alt="Gym members and training community at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.750;">
-              <img src="gallery_assets/thumbs/gym_photo_010_thumb.webp" alt="Fitness gathering and bodybuilding showcase event" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.449;">
-              <img src="gallery_assets/thumbs/gym_photo_011_thumb.webp" alt="Gym facility and training area at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_012_thumb.webp" alt="Strength and cardio fitness apparatus at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.449;">
-              <img src="gallery_assets/thumbs/gym_photo_001_thumb.webp" alt="Gym facility and training area at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.750;">
-              <img src="gallery_assets/thumbs/gym_photo_002_thumb.webp" alt="Strength and cardio fitness apparatus at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_003_thumb.webp" alt="Workout and physical conditioning session at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.562;">
-              <img src="gallery_assets/thumbs/gym_photo_004_thumb.webp" alt="Gym members and training community at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.562;">
-              <img src="gallery_assets/thumbs/gym_photo_005_thumb.webp" alt="Fitness gathering and bodybuilding showcase event" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.562;">
-              <img src="gallery_assets/thumbs/gym_photo_006_thumb.webp" alt="Gym facility and training area at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.750;">
-              <img src="gallery_assets/thumbs/gym_photo_007_thumb.webp" alt="Strength and cardio fitness apparatus at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.070;">
-              <img src="gallery_assets/thumbs/gym_photo_008_thumb.webp" alt="Workout and physical conditioning session at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_009_thumb.webp" alt="Gym members and training community at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.750;">
-              <img src="gallery_assets/thumbs/gym_photo_010_thumb.webp" alt="Fitness gathering and bodybuilding showcase event" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.449;">
-              <img src="gallery_assets/thumbs/gym_photo_011_thumb.webp" alt="Gym facility and training area at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_012_thumb.webp" alt="Strength and cardio fitness apparatus at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-        </div>
-      </div>
-
-      <!-- Track 2: Scrolls Right -->
-      <div class="strip-row strip-row-bottom" tabindex="0" aria-label="Gym photos preview row 2">
-        <div class="strip-track strip-track-right">
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_013_thumb.webp" alt="Workout and physical conditioning session at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_014_thumb.webp" alt="Gym members and training community at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_015_thumb.webp" alt="Fitness gathering and bodybuilding showcase event" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.221;">
-              <img src="gallery_assets/thumbs/gym_photo_016_thumb.webp" alt="Gym facility and training area at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.605;">
-              <img src="gallery_assets/thumbs/gym_photo_017_thumb.webp" alt="Strength and cardio fitness apparatus at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_018_thumb.webp" alt="Workout and physical conditioning session at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_019_thumb.webp" alt="Gym members and training community at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.819;">
-              <img src="gallery_assets/thumbs/gym_photo_020_thumb.webp" alt="Fitness gathering and bodybuilding showcase event" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_021_thumb.webp" alt="Gym facility and training area at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.450;">
-              <img src="gallery_assets/thumbs/gym_photo_022_thumb.webp" alt="Strength and cardio fitness apparatus at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.989;">
-              <img src="gallery_assets/thumbs/gym_photo_023_thumb.webp" alt="Workout and physical conditioning session at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.450;">
-              <img src="gallery_assets/thumbs/gym_photo_024_thumb.webp" alt="Gym members and training community at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_013_thumb.webp" alt="Workout and physical conditioning session at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_014_thumb.webp" alt="Gym members and training community at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_015_thumb.webp" alt="Fitness gathering and bodybuilding showcase event" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.221;">
-              <img src="gallery_assets/thumbs/gym_photo_016_thumb.webp" alt="Gym facility and training area at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.605;">
-              <img src="gallery_assets/thumbs/gym_photo_017_thumb.webp" alt="Strength and cardio fitness apparatus at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_018_thumb.webp" alt="Workout and physical conditioning session at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_019_thumb.webp" alt="Gym members and training community at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.819;">
-              <img src="gallery_assets/thumbs/gym_photo_020_thumb.webp" alt="Fitness gathering and bodybuilding showcase event" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 1.333;">
-              <img src="gallery_assets/thumbs/gym_photo_021_thumb.webp" alt="Gym facility and training area at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.450;">
-              <img src="gallery_assets/thumbs/gym_photo_022_thumb.webp" alt="Strength and cardio fitness apparatus at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.989;">
-              <img src="gallery_assets/thumbs/gym_photo_023_thumb.webp" alt="Workout and physical conditioning session at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-            <div class="strip-tile" style="--ar: 0.450;">
-              <img src="gallery_assets/thumbs/gym_photo_024_thumb.webp" alt="Gym members and training community at Abu Huraira World Gym" loading="lazy" decoding="async" class="strip-img">
-            </div>
-        </div>
-      </div>
-    </section>
+            <!-- Hero Strip: Dual Counter-Scrolling Infinite Tracks -->
+    
 
     <!-- Section: Gallery (Masonry & Lightbox) -->
     <section class="section-gallery" id="gallery" aria-labelledby="gallery-title">
@@ -756,7 +457,7 @@
           <div>
             <div class="gallery-count-badge">
               <span class="pulse-dot" aria-hidden="true"></span>
-              <span id="galleryCountText">168+ Real Gym Photos</span>
+              <span id="galleryCountText">56+ Real Gym Photos</span>
             </div>
             <h2 id="gallery-title" class="section-heading" data-i18n="gal_title">Gym photo gallery.</h2>
             <p class="section-subtext" data-i18n="gal_sub">
@@ -770,22 +471,19 @@
         <nav class="gallery-tabs-nav" aria-label="Gallery photo categories">
           <div class="gallery-tabs-scroll" id="galleryTabs">
             <button class="gallery-tab active" data-category="all" type="button">
-              <span data-i18n="gal_tab_all">All</span> <span class="tab-count">(168)</span>
+              <span data-i18n="gal_tab_all">All</span> <span class="tab-count">(56)</span>
             </button>
             <button class="gallery-tab" data-category="Facility" type="button">
-              <span data-i18n="gal_tab_facility">Facility</span> <span class="tab-count">(32)</span>
+              <span data-i18n="gal_tab_facility">Facility</span> <span class="tab-count">(12)</span>
             </button>
             <button class="gallery-tab" data-category="Equipment" type="button">
-              <span data-i18n="gal_tab_equipment">Equipment</span> <span class="tab-count">(32)</span>
-            </button>
-            <button class="gallery-tab" data-category="Training" type="button">
-              <span data-i18n="gal_tab_training">Training</span> <span class="tab-count">(33)</span>
+              <span data-i18n="gal_tab_equipment">Equipment</span> <span class="tab-count">(19)</span>
             </button>
             <button class="gallery-tab" data-category="Members" type="button">
-              <span data-i18n="gal_tab_members">Members</span> <span class="tab-count">(40)</span>
+              <span data-i18n="gal_tab_members">Members</span> <span class="tab-count">(17)</span>
             </button>
-            <button class="gallery-tab" data-category="Events" type="button">
-              <span data-i18n="gal_tab_events">Events</span> <span class="tab-count">(31)</span>
+            <button class="gallery-tab" data-category="Training" type="button">
+              <span data-i18n="gal_tab_training">Training</span> <span class="tab-count">(8)</span>
             </button>
             <div class="tab-sliding-indicator" id="tabIndicator" aria-hidden="true"></div>
           </div>
@@ -793,20 +491,9 @@
 
         <!-- Masonry Grid Container -->
         <div class="gallery-masonry-grid" id="mainGallery" role="region" aria-live="polite">
-          <figure class="gallery-item" data-id="gym_photo_001" data-cat="Facility" data-full="gallery_assets/full/gym_photo_001_full.webp" tabindex="0" role="button" aria-label="Gym facility and training area at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 1080 / 2408; background-color: #2f2f2b;">
-              <img src="gallery_assets/thumbs/gym_photo_001_thumb.webp" alt="Gym facility and training area at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
-              <div class="gallery-item-overlay">
-                <span class="gallery-expand-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                </span>
-                <span class="gallery-item-cat">Facility</span>
-              </div>
-            </div>
-          </figure>
-          <figure class="gallery-item" data-id="gym_photo_002" data-cat="Equipment" data-full="gallery_assets/full/gym_photo_002_full.webp" tabindex="0" role="button" aria-label="Strength and cardio fitness apparatus at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 1200 / 1600; background-color: #6c5251;">
-              <img src="gallery_assets/thumbs/gym_photo_002_thumb.webp" alt="Strength and cardio fitness apparatus at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
+          <figure class="gallery-item" data-id="gym_photo_001" data-cat="Equipment" data-full="gallery_assets_trimmed/full/gym_photo_001_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 1152 / 2048; background-color: #726565;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_001_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
               <div class="gallery-item-overlay">
                 <span class="gallery-expand-icon" aria-hidden="true">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
@@ -815,53 +502,9 @@
               </div>
             </div>
           </figure>
-          <figure class="gallery-item" data-id="gym_photo_003" data-cat="Training" data-full="gallery_assets/full/gym_photo_003_full.webp" tabindex="0" role="button" aria-label="Workout and physical conditioning session at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 2048 / 1536; background-color: #aa9f96;">
-              <img src="gallery_assets/thumbs/gym_photo_003_thumb.webp" alt="Workout and physical conditioning session at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
-              <div class="gallery-item-overlay">
-                <span class="gallery-expand-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                </span>
-                <span class="gallery-item-cat">Training</span>
-              </div>
-            </div>
-          </figure>
-          <figure class="gallery-item" data-id="gym_photo_004" data-cat="Members" data-full="gallery_assets/full/gym_photo_004_full.webp" tabindex="0" role="button" aria-label="Gym members and training community at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 1152 / 2048; background-color: #7a6c6b;">
-              <img src="gallery_assets/thumbs/gym_photo_004_thumb.webp" alt="Gym members and training community at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
-              <div class="gallery-item-overlay">
-                <span class="gallery-expand-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                </span>
-                <span class="gallery-item-cat">Members</span>
-              </div>
-            </div>
-          </figure>
-          <figure class="gallery-item" data-id="gym_photo_005" data-cat="Events" data-full="gallery_assets/full/gym_photo_005_full.webp" tabindex="0" role="button" aria-label="Fitness gathering and bodybuilding showcase event">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 900 / 1600; background-color: #86755e;">
-              <img src="gallery_assets/thumbs/gym_photo_005_thumb.webp" alt="Fitness gathering and bodybuilding showcase event" loading="lazy" decoding="async" class="gallery-thumb">
-              <div class="gallery-item-overlay">
-                <span class="gallery-expand-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                </span>
-                <span class="gallery-item-cat">Events</span>
-              </div>
-            </div>
-          </figure>
-          <figure class="gallery-item" data-id="gym_photo_006" data-cat="Facility" data-full="gallery_assets/full/gym_photo_006_full.webp" tabindex="0" role="button" aria-label="Gym facility and training area at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 1152 / 2048; background-color: #78736c;">
-              <img src="gallery_assets/thumbs/gym_photo_006_thumb.webp" alt="Gym facility and training area at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
-              <div class="gallery-item-overlay">
-                <span class="gallery-expand-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                </span>
-                <span class="gallery-item-cat">Facility</span>
-              </div>
-            </div>
-          </figure>
-          <figure class="gallery-item" data-id="gym_photo_007" data-cat="Equipment" data-full="gallery_assets/full/gym_photo_007_full.webp" tabindex="0" role="button" aria-label="Strength and cardio fitness apparatus at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 1536 / 2048; background-color: #666362;">
-              <img src="gallery_assets/thumbs/gym_photo_007_thumb.webp" alt="Strength and cardio fitness apparatus at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
+          <figure class="gallery-item" data-id="gym_photo_002" data-cat="Equipment" data-full="gallery_assets_trimmed/full/gym_photo_002_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 720 / 960; background-color: #736861;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_002_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
               <div class="gallery-item-overlay">
                 <span class="gallery-expand-icon" aria-hidden="true">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
@@ -870,42 +513,9 @@
               </div>
             </div>
           </figure>
-          <figure class="gallery-item" data-id="gym_photo_008" data-cat="Training" data-full="gallery_assets/full/gym_photo_008_full.webp" tabindex="0" role="button" aria-label="Workout and physical conditioning session at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 1138 / 1064; background-color: #3e3d3d;">
-              <img src="gallery_assets/thumbs/gym_photo_008_thumb.webp" alt="Workout and physical conditioning session at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
-              <div class="gallery-item-overlay">
-                <span class="gallery-expand-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                </span>
-                <span class="gallery-item-cat">Training</span>
-              </div>
-            </div>
-          </figure>
-          <figure class="gallery-item" data-id="gym_photo_009" data-cat="Members" data-full="gallery_assets/full/gym_photo_009_full.webp" tabindex="0" role="button" aria-label="Gym members and training community at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 1280 / 960; background-color: #404a72;">
-              <img src="gallery_assets/thumbs/gym_photo_009_thumb.webp" alt="Gym members and training community at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
-              <div class="gallery-item-overlay">
-                <span class="gallery-expand-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                </span>
-                <span class="gallery-item-cat">Members</span>
-              </div>
-            </div>
-          </figure>
-          <figure class="gallery-item" data-id="gym_photo_010" data-cat="Events" data-full="gallery_assets/full/gym_photo_010_full.webp" tabindex="0" role="button" aria-label="Fitness gathering and bodybuilding showcase event">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 960 / 1280; background-color: #929590;">
-              <img src="gallery_assets/thumbs/gym_photo_010_thumb.webp" alt="Fitness gathering and bodybuilding showcase event" loading="lazy" decoding="async" class="gallery-thumb">
-              <div class="gallery-item-overlay">
-                <span class="gallery-expand-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                </span>
-                <span class="gallery-item-cat">Events</span>
-              </div>
-            </div>
-          </figure>
-          <figure class="gallery-item" data-id="gym_photo_011" data-cat="Facility" data-full="gallery_assets/full/gym_photo_011_full.webp" tabindex="0" role="button" aria-label="Gym facility and training area at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 1080 / 2408; background-color: #2e2424;">
-              <img src="gallery_assets/thumbs/gym_photo_011_thumb.webp" alt="Gym facility and training area at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
+          <figure class="gallery-item" data-id="gym_photo_003" data-cat="Facility" data-full="gallery_assets_trimmed/full/gym_photo_003_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 1536 / 2048; background-color: #676362;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_003_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
               <div class="gallery-item-overlay">
                 <span class="gallery-expand-icon" aria-hidden="true">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
@@ -914,53 +524,9 @@
               </div>
             </div>
           </figure>
-          <figure class="gallery-item" data-id="gym_photo_012" data-cat="Equipment" data-full="gallery_assets/full/gym_photo_012_full.webp" tabindex="0" role="button" aria-label="Strength and cardio fitness apparatus at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 1280 / 960; background-color: #65493a;">
-              <img src="gallery_assets/thumbs/gym_photo_012_thumb.webp" alt="Strength and cardio fitness apparatus at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
-              <div class="gallery-item-overlay">
-                <span class="gallery-expand-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                </span>
-                <span class="gallery-item-cat">Equipment</span>
-              </div>
-            </div>
-          </figure>
-          <figure class="gallery-item" data-id="gym_photo_013" data-cat="Training" data-full="gallery_assets/full/gym_photo_013_full.webp" tabindex="0" role="button" aria-label="Workout and physical conditioning session at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 1280 / 960; background-color: #95674d;">
-              <img src="gallery_assets/thumbs/gym_photo_013_thumb.webp" alt="Workout and physical conditioning session at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
-              <div class="gallery-item-overlay">
-                <span class="gallery-expand-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                </span>
-                <span class="gallery-item-cat">Training</span>
-              </div>
-            </div>
-          </figure>
-          <figure class="gallery-item" data-id="gym_photo_014" data-cat="Members" data-full="gallery_assets/full/gym_photo_014_full.webp" tabindex="0" role="button" aria-label="Gym members and training community at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 1280 / 960; background-color: #90769e;">
-              <img src="gallery_assets/thumbs/gym_photo_014_thumb.webp" alt="Gym members and training community at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
-              <div class="gallery-item-overlay">
-                <span class="gallery-expand-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                </span>
-                <span class="gallery-item-cat">Members</span>
-              </div>
-            </div>
-          </figure>
-          <figure class="gallery-item" data-id="gym_photo_015" data-cat="Events" data-full="gallery_assets/full/gym_photo_015_full.webp" tabindex="0" role="button" aria-label="Fitness gathering and bodybuilding showcase event">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 1280 / 960; background-color: #8c7990;">
-              <img src="gallery_assets/thumbs/gym_photo_015_thumb.webp" alt="Fitness gathering and bodybuilding showcase event" loading="lazy" decoding="async" class="gallery-thumb">
-              <div class="gallery-item-overlay">
-                <span class="gallery-expand-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                </span>
-                <span class="gallery-item-cat">Events</span>
-              </div>
-            </div>
-          </figure>
-          <figure class="gallery-item" data-id="gym_photo_016" data-cat="Facility" data-full="gallery_assets/full/gym_photo_016_full.webp" tabindex="0" role="button" aria-label="Gym facility and training area at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 960 / 786; background-color: #8e8377;">
-              <img src="gallery_assets/thumbs/gym_photo_016_thumb.webp" alt="Gym facility and training area at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
+          <figure class="gallery-item" data-id="gym_photo_004" data-cat="Facility" data-full="gallery_assets_trimmed/full/gym_photo_004_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 2048 / 1536; background-color: #a89e94;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_004_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
               <div class="gallery-item-overlay">
                 <span class="gallery-expand-icon" aria-hidden="true">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
@@ -969,9 +535,9 @@
               </div>
             </div>
           </figure>
-          <figure class="gallery-item" data-id="gym_photo_017" data-cat="Equipment" data-full="gallery_assets/full/gym_photo_017_full.webp" tabindex="0" role="button" aria-label="Strength and cardio fitness apparatus at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 945 / 1563; background-color: #2d282a;">
-              <img src="gallery_assets/thumbs/gym_photo_017_thumb.webp" alt="Strength and cardio fitness apparatus at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
+          <figure class="gallery-item" data-id="gym_photo_005" data-cat="Equipment" data-full="gallery_assets_trimmed/full/gym_photo_005_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 960 / 720; background-color: #857d7a;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_005_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
               <div class="gallery-item-overlay">
                 <span class="gallery-expand-icon" aria-hidden="true">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
@@ -980,42 +546,9 @@
               </div>
             </div>
           </figure>
-          <figure class="gallery-item" data-id="gym_photo_018" data-cat="Training" data-full="gallery_assets/full/gym_photo_018_full.webp" tabindex="0" role="button" aria-label="Workout and physical conditioning session at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 1280 / 960; background-color: #62504a;">
-              <img src="gallery_assets/thumbs/gym_photo_018_thumb.webp" alt="Workout and physical conditioning session at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
-              <div class="gallery-item-overlay">
-                <span class="gallery-expand-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                </span>
-                <span class="gallery-item-cat">Training</span>
-              </div>
-            </div>
-          </figure>
-          <figure class="gallery-item" data-id="gym_photo_019" data-cat="Members" data-full="gallery_assets/full/gym_photo_019_full.webp" tabindex="0" role="button" aria-label="Gym members and training community at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 1600 / 1200; background-color: #48413c;">
-              <img src="gallery_assets/thumbs/gym_photo_019_thumb.webp" alt="Gym members and training community at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
-              <div class="gallery-item-overlay">
-                <span class="gallery-expand-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                </span>
-                <span class="gallery-item-cat">Members</span>
-              </div>
-            </div>
-          </figure>
-          <figure class="gallery-item" data-id="gym_photo_020" data-cat="Events" data-full="gallery_assets/full/gym_photo_020_full.webp" tabindex="0" role="button" aria-label="Fitness gathering and bodybuilding showcase event">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 720 / 879; background-color: #7a7273;">
-              <img src="gallery_assets/thumbs/gym_photo_020_thumb.webp" alt="Fitness gathering and bodybuilding showcase event" loading="lazy" decoding="async" class="gallery-thumb">
-              <div class="gallery-item-overlay">
-                <span class="gallery-expand-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                </span>
-                <span class="gallery-item-cat">Events</span>
-              </div>
-            </div>
-          </figure>
-          <figure class="gallery-item" data-id="gym_photo_021" data-cat="Facility" data-full="gallery_assets/full/gym_photo_021_full.webp" tabindex="0" role="button" aria-label="Gym facility and training area at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 1024 / 768; background-color: #70655e;">
-              <img src="gallery_assets/thumbs/gym_photo_021_thumb.webp" alt="Gym facility and training area at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
+          <figure class="gallery-item" data-id="gym_photo_006" data-cat="Facility" data-full="gallery_assets_trimmed/full/gym_photo_006_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 960 / 720; background-color: #706455;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_006_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
               <div class="gallery-item-overlay">
                 <span class="gallery-expand-icon" aria-hidden="true">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
@@ -1024,9 +557,20 @@
               </div>
             </div>
           </figure>
-          <figure class="gallery-item" data-id="gym_photo_022" data-cat="Equipment" data-full="gallery_assets/full/gym_photo_022_full.webp" tabindex="0" role="button" aria-label="Strength and cardio fitness apparatus at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 720 / 1600; background-color: #4c392e;">
-              <img src="gallery_assets/thumbs/gym_photo_022_thumb.webp" alt="Strength and cardio fitness apparatus at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
+          <figure class="gallery-item" data-id="gym_photo_007" data-cat="Facility" data-full="gallery_assets_trimmed/full/gym_photo_007_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 527 / 541; background-color: #292223;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_007_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
+              <div class="gallery-item-overlay">
+                <span class="gallery-expand-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </span>
+                <span class="gallery-item-cat">Facility</span>
+              </div>
+            </div>
+          </figure>
+          <figure class="gallery-item" data-id="gym_photo_008" data-cat="Equipment" data-full="gallery_assets_trimmed/full/gym_photo_008_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 960 / 720; background-color: #7d7673;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_008_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
               <div class="gallery-item-overlay">
                 <span class="gallery-expand-icon" aria-hidden="true">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
@@ -1035,9 +579,130 @@
               </div>
             </div>
           </figure>
-          <figure class="gallery-item" data-id="gym_photo_023" data-cat="Training" data-full="gallery_assets/full/gym_photo_023_full.webp" tabindex="0" role="button" aria-label="Workout and physical conditioning session at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 1080 / 1092; background-color: #695322;">
-              <img src="gallery_assets/thumbs/gym_photo_023_thumb.webp" alt="Workout and physical conditioning session at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
+          <figure class="gallery-item" data-id="gym_photo_009" data-cat="Equipment" data-full="gallery_assets_trimmed/full/gym_photo_009_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 720 / 960; background-color: #574d43;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_009_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
+              <div class="gallery-item-overlay">
+                <span class="gallery-expand-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </span>
+                <span class="gallery-item-cat">Equipment</span>
+              </div>
+            </div>
+          </figure>
+          <figure class="gallery-item" data-id="gym_photo_010" data-cat="Equipment" data-full="gallery_assets_trimmed/full/gym_photo_010_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 720 / 960; background-color: #6b6259;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_010_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
+              <div class="gallery-item-overlay">
+                <span class="gallery-expand-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </span>
+                <span class="gallery-item-cat">Equipment</span>
+              </div>
+            </div>
+          </figure>
+          <figure class="gallery-item" data-id="gym_photo_011" data-cat="Equipment" data-full="gallery_assets_trimmed/full/gym_photo_011_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 900 / 1600; background-color: #81705a;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_011_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
+              <div class="gallery-item-overlay">
+                <span class="gallery-expand-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </span>
+                <span class="gallery-item-cat">Equipment</span>
+              </div>
+            </div>
+          </figure>
+          <figure class="gallery-item" data-id="gym_photo_012" data-cat="Equipment" data-full="gallery_assets_trimmed/full/gym_photo_012_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 528 / 960; background-color: #8d7f5c;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_012_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
+              <div class="gallery-item-overlay">
+                <span class="gallery-expand-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </span>
+                <span class="gallery-item-cat">Equipment</span>
+              </div>
+            </div>
+          </figure>
+          <figure class="gallery-item" data-id="gym_photo_013" data-cat="Facility" data-full="gallery_assets_trimmed/full/gym_photo_013_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 1536 / 2048; background-color: #676362;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_013_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
+              <div class="gallery-item-overlay">
+                <span class="gallery-expand-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </span>
+                <span class="gallery-item-cat">Facility</span>
+              </div>
+            </div>
+          </figure>
+          <figure class="gallery-item" data-id="gym_photo_014" data-cat="Facility" data-full="gallery_assets_trimmed/full/gym_photo_014_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 900 / 1600; background-color: #81705a;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_014_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
+              <div class="gallery-item-overlay">
+                <span class="gallery-expand-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </span>
+                <span class="gallery-item-cat">Facility</span>
+              </div>
+            </div>
+          </figure>
+          <figure class="gallery-item" data-id="gym_photo_015" data-cat="Equipment" data-full="gallery_assets_trimmed/full/gym_photo_015_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 1152 / 2048; background-color: #726565;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_015_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
+              <div class="gallery-item-overlay">
+                <span class="gallery-expand-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </span>
+                <span class="gallery-item-cat">Equipment</span>
+              </div>
+            </div>
+          </figure>
+          <figure class="gallery-item" data-id="gym_photo_016" data-cat="Facility" data-full="gallery_assets_trimmed/full/gym_photo_016_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 2048 / 1536; background-color: #a89e94;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_016_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
+              <div class="gallery-item-overlay">
+                <span class="gallery-expand-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </span>
+                <span class="gallery-item-cat">Facility</span>
+              </div>
+            </div>
+          </figure>
+          <figure class="gallery-item" data-id="gym_photo_017" data-cat="Members" data-full="gallery_assets_trimmed/full/gym_photo_017_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 1076 / 812; background-color: #775e50;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_017_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
+              <div class="gallery-item-overlay">
+                <span class="gallery-expand-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </span>
+                <span class="gallery-item-cat">Members</span>
+              </div>
+            </div>
+          </figure>
+          <figure class="gallery-item" data-id="gym_photo_018" data-cat="Equipment" data-full="gallery_assets_trimmed/full/gym_photo_018_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 1200 / 1600; background-color: #6c5150;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_018_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
+              <div class="gallery-item-overlay">
+                <span class="gallery-expand-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </span>
+                <span class="gallery-item-cat">Equipment</span>
+              </div>
+            </div>
+          </figure>
+          <figure class="gallery-item" data-id="gym_photo_019" data-cat="Equipment" data-full="gallery_assets_trimmed/full/gym_photo_019_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 1536 / 2048; background-color: #676362;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_019_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
+              <div class="gallery-item-overlay">
+                <span class="gallery-expand-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </span>
+                <span class="gallery-item-cat">Equipment</span>
+              </div>
+            </div>
+          </figure>
+          <figure class="gallery-item" data-id="gym_photo_020" data-cat="Training" data-full="gallery_assets_trimmed/full/gym_photo_020_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 1138 / 1064; background-color: #424141;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_020_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
               <div class="gallery-item-overlay">
                 <span class="gallery-expand-icon" aria-hidden="true">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
@@ -1046,14 +711,47 @@
               </div>
             </div>
           </figure>
-          <figure class="gallery-item" data-id="gym_photo_024" data-cat="Members" data-full="gallery_assets/full/gym_photo_024_full.webp" tabindex="0" role="button" aria-label="Gym members and training community at Abu Huraira World Gym">
-            <div class="gallery-aspect-wrap" style="aspect-ratio: 576 / 1280; background-color: #695d56;">
-              <img src="gallery_assets/thumbs/gym_photo_024_thumb.webp" alt="Gym members and training community at Abu Huraira World Gym" loading="lazy" decoding="async" class="gallery-thumb">
+          <figure class="gallery-item" data-id="gym_photo_021" data-cat="Members" data-full="gallery_assets_trimmed/full/gym_photo_021_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 1280 / 960; background-color: #3f4974;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_021_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
               <div class="gallery-item-overlay">
                 <span class="gallery-expand-icon" aria-hidden="true">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
                 </span>
                 <span class="gallery-item-cat">Members</span>
+              </div>
+            </div>
+          </figure>
+          <figure class="gallery-item" data-id="gym_photo_022" data-cat="Members" data-full="gallery_assets_trimmed/full/gym_photo_022_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 1280 / 960; background-color: #91769f;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_022_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
+              <div class="gallery-item-overlay">
+                <span class="gallery-expand-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </span>
+                <span class="gallery-item-cat">Members</span>
+              </div>
+            </div>
+          </figure>
+          <figure class="gallery-item" data-id="gym_photo_023" data-cat="Facility" data-full="gallery_assets_trimmed/full/gym_photo_023_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 960 / 786; background-color: #8b8076;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_023_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
+              <div class="gallery-item-overlay">
+                <span class="gallery-expand-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </span>
+                <span class="gallery-item-cat">Facility</span>
+              </div>
+            </div>
+          </figure>
+          <figure class="gallery-item" data-id="gym_photo_024" data-cat="Training" data-full="gallery_assets_trimmed/full/gym_photo_024_full.webp" tabindex="0" role="button" aria-label="Photo from World Gym Kasur">
+            <div class="gallery-aspect-wrap" style="aspect-ratio: 1280 / 960; background-color: #5d4d47;">
+              <img src="gallery_assets_trimmed/thumbs/gym_photo_024_thumb.webp" alt="Photo from World Gym Kasur" loading="lazy" decoding="async" class="gallery-thumb">
+              <div class="gallery-item-overlay">
+                <span class="gallery-expand-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </span>
+                <span class="gallery-item-cat">Training</span>
               </div>
             </div>
           </figure>
@@ -1061,7 +759,7 @@
 
         <!-- Load More Action -->
         <div class="gallery-load-wrapper" id="loadMoreWrap">
-          <button type="button" class="btn-pill btn-pill-outline btn-lg" id="galleryLoadMoreBtn">
+          <button type="button" class="btn-pill btn-pill-teal btn-lg" id="galleryLoadMoreBtn">
             <span data-i18n="gal_load_more">Load More Photos</span> <span class="arrow" aria-hidden="true">↓</span>
           </button>
         </div>
@@ -1080,12 +778,131 @@
     </section>
 
     <!-- Section: FAQ Accordion (Strictly from GYM_DATA.md) -->
-    <section class="section-faq" id="faq" aria-labelledby="faq-title">
+        <!-- Section: Reviews / Social Proof (Strictly Verified from GYM_DATA.md) -->
+    <section class="section-reviews" id="reviews" aria-labelledby="reviews-title">
+      <div class="section-bg-watermark" aria-hidden="true">COMMUNITY</div>
+      <div class="site-container">
+        <div class="section-header-split">
+          <div class="section-heading-wrap">
+            <div class="rating-pill">
+              <span class="star-rating">★★★★★</span>
+              <span class="rating-text" data-i18n="rev_rating_pill">4.6 on Google • 155 reviews</span>
+            </div>
+            <h2 id="reviews-title" class="section-heading" data-i18n="rev_title">What our members say.</h2>
+            <span class="heading-accent-line" aria-hidden="true"></span>
+            <p class="section-subtext" data-i18n="rev_sub">
+              Real feedback from visitor reviews training at ABU HURAIRA WORLD GYM in Kasur.
+            </p>
+          </div>
+          <div class="reviews-header-actions">
+            <a href="https://maps.app.goo.gl/xJcjfoftPtWRDEvV9" class="btn-pill btn-pill-teal" target="_blank" rel="noopener">
+              <span data-i18n="rev_leave_btn">Leave a review on Google</span> <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a href="https://maps.app.goo.gl/xJcjfoftPtWRDEvV9" class="btn-pill btn-pill-glass" target="_blank" rel="noopener">
+              <span data-i18n="rev_view_maps">View all 155 reviews</span> <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Review 1 -->
+          <article class="review-card">
+            <div class="review-header">
+              <span class="review-stars">★★★★★</span>
+              <span class="review-badge" data-i18n="rev_badge">Google review</span>
+            </div>
+            <blockquote class="review-quote" data-i18n="rev1_quote">
+              "It's a great gym for men and women. Very good equipments for workout and environment is also very good. There are many gyms in city but this the best in class."
+            </blockquote>
+            <div class="review-author">
+              <div class="author-avatar">M</div>
+              <div class="author-info">
+                <span class="author-name" data-i18n="rev1_author">Muhammad</span>
+                <span class="author-tag" data-i18n="rev_badge">Google review</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 2 -->
+          <article class="review-card">
+            <div class="review-header">
+              <span class="review-stars">★★★★★</span>
+              <span class="review-badge" data-i18n="rev_badge">Google review</span>
+            </div>
+            <blockquote class="review-quote" data-i18n="rev2_quote">
+              "Best gym in Kasur. Even better than many gyms in Lahore. They have open area. A little juices and shakes cafe."
+            </blockquote>
+            <div class="review-author">
+              <div class="author-avatar">R</div>
+              <div class="author-info">
+                <span class="author-name" data-i18n="rev2_author">Ramiz</span>
+                <span class="author-tag" data-i18n="rev_badge">Google review</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 3 -->
+          <article class="review-card">
+            <div class="review-header">
+              <span class="review-stars">★★★★★</span>
+              <span class="review-badge" data-i18n="rev_badge">Google review</span>
+            </div>
+            <blockquote class="review-quote" data-i18n="rev3_quote">
+              "World Gym fitness centre is a nice facility for the people of Kasur city to keep them fit, energetic and active. Equipped with automated machinery and have good trainers too in the guidance of Mr. Abu Haraira (Ex Mr. Kasur)."
+            </blockquote>
+            <div class="review-author">
+              <div class="author-avatar">A</div>
+              <div class="author-info">
+                <span class="author-name" data-i18n="rev3_author">Anjum</span>
+                <span class="author-tag" data-i18n="rev_badge">Google review</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 4 -->
+          <article class="review-card">
+            <div class="review-header">
+              <span class="review-stars">★★★★★</span>
+              <span class="review-badge" data-i18n="rev_badge">Google review</span>
+            </div>
+            <blockquote class="review-quote" data-i18n="rev4_quote">
+              "Best Gym All Ever in Kasur City. All fitness machines international level and big advantage is environment is natural."
+            </blockquote>
+            <div class="review-author">
+              <div class="author-avatar">A</div>
+              <div class="author-info">
+                <span class="author-name" data-i18n="rev4_author">Adnan</span>
+                <span class="author-tag" data-i18n="rev_badge">Google review</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Reviews QR Code Component for in-person visitors & desktop scanning -->
+        <div class="reviews-qr-card">
+          <div class="qr-card-info">
+            <h3 class="qr-card-title" data-i18n="qr_title">Scan to review on Google Maps</h3>
+            <p class="qr-card-desc" data-i18n="qr_desc">
+              Have you trained at Abu Huraira World Gym? Point your phone camera at this QR code to view our 155 Google reviews or share your own experience.
+            </p>
+            <a href="https://maps.app.goo.gl/xJcjfoftPtWRDEvV9" class="qr-link" target="_blank" rel="noopener" data-i18n="qr_link">Open Google Maps Listing ↗</a>
+          </div>
+          <div class="qr-code-wrapper">
+            <div class="qr-code-frame" role="img" aria-label="QR Code to Abu Huraira World Gym on Google Maps">
+              <img src="images/qr-google-review.svg" alt="Google Review QR Code" class="qr-code-img" width="140" height="140">
+            </div>
+            <span class="qr-caption" data-i18n="qr_caption">Rated 4.6 ★ (155 Reviews)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="section-faq" id="faq" aria-labelledby="faq-title">
       <div class="section-bg-watermark" aria-hidden="true">QUESTIONS</div>
       <div class="site-container">
         <div class="section-header-split">
           <div class="section-heading-wrap">
-            <span class="eyebrow-tag">HELP &amp; ANSWERS</span>
+            <span class="eyebrow-tag" data-i18n="faq_eyebrow">HELP &amp; ANSWERS</span>
             <h2 id="faq-title" class="section-heading" data-i18n="faq_title">Frequently asked questions.</h2>
             <span class="heading-accent-line" aria-hidden="true"></span>
             <p class="section-subtext" data-i18n="faq_sub">
@@ -1154,21 +971,21 @@
 
           <!-- Side Panel WhatsApp Card -->
           <aside class="faq-side-card" aria-label="Direct inquiry">
-            <div class="side-card-badge">DIRECT ASSISTANCE</div>
-            <h3 class="side-card-title">Have more questions?</h3>
-            <p class="side-card-desc">
+            <div class="side-card-badge" data-i18n="faq_side_badge">DIRECT ASSISTANCE</div>
+            <h3 class="side-card-title" data-i18n="faq_side_title">Have more questions?</h3>
+            <p class="side-card-desc" data-i18n="faq_side_desc">
               Message us on WhatsApp. We answer questions about timings, machines and women's training hours.
             </p>
             <div class="side-card-actions">
               <a href="https://wa.me/923214670428" class="btn-pill btn-pill-teal" target="_blank" rel="noopener">
-                <span>Chat on WhatsApp</span> <span class="arrow" aria-hidden="true">↗</span>
+                <span data-i18n="faq_side_chat">Chat on WhatsApp</span> <span class="arrow" aria-hidden="true">↗</span>
               </a>
               <a href="tel:+923214670428" class="btn-pill btn-pill-glass">
-                <span>Call +92 321 4670428</span>
+                <span data-i18n="faq_side_call">Call <bdi dir="ltr">+92 321 4670428</bdi></span>
               </a>
             </div>
             <div class="side-card-foot">
-              <span>Cash payments only • Open daily closes 12 AM</span>
+              <span data-i18n="faq_side_foot">Cash payments only • Open daily closes 12 AM</span>
             </div>
           </aside>
         </div>
@@ -1195,22 +1012,27 @@
                 <span data-i18n="loc_get_directions">Get Directions</span> <span class="arrow" aria-hidden="true">↗</span>
               </a>
               <a href="tel:+923214670428" class="btn-pill btn-pill-outline-dark">
-                <span data-i18n="loc_call">Call +92 321 4670428</span>
+                <span data-i18n="loc_call">Call <bdi dir="ltr">+92 321 4670428</bdi></span>
               </a>
             </div>
           </div>
           
-          <div class="location-map-frame">
-            <iframe 
-              src="https://maps.google.com/maps?q=4C8R%2B5XC%2C%20Nizam%20Pura%20Rd%2C%20Kot%20Murad%20Khan%2C%20Kasur&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-              width="100%" 
-              height="100%" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Abu Huraira World Gym Fitness Center Kasur Location">
-            </iframe>
+          <div class="location-map-frame" id="locationMapFrame">
+            <div class="map-placeholder" id="mapPlaceholder">
+              <div class="map-placeholder-bg" aria-hidden="true"></div>
+              <div class="map-placeholder-content">
+                <div class="map-pin-icon" aria-hidden="true">
+                  <svg width="36" height="36" viewBox="0 0 24 24" fill="var(--color-primary)" stroke="#ffffff" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3" fill="#ffffff"></circle></svg>
+                </div>
+                <h3 class="map-placeholder-title" data-i18n="map_prompt_title">Kot Murad Khan, Kasur</h3>
+                <p class="map-placeholder-desc" data-i18n="map_prompt_desc">4C8R+5XC, Nizam Pura Rd, near Jamal Market</p>
+                <button type="button" class="btn-pill btn-pill-teal" id="loadMapBtn">
+                  <span data-i18n="map_load_btn">Show Interactive Map</span> <span class="arrow" aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+            <div class="map-iframe-container" id="mapIframeContainer" style="display:none; width:100%; height:100%;">
+            </div>
           </div>
         </div>
       </div>
@@ -1263,13 +1085,12 @@
         <div class="footer-col">
           <h3 class="footer-heading" data-i18n="footer_h_menu">MENU</h3>
           <ul class="footer-links">
-            <li><a href="#hero">Overview</a></li>
-            <li><a href="#highlights">Highlights</a></li>
-            <li><a href="#facilities">Facilities</a></li>
-            <li><a href="#membership">Membership</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#location">Location</a></li>
+            <li><a href="#hero" data-i18n="footer_link_overview">Overview</a></li>
+            <li><a href="#facilities" data-i18n="footer_link_facilities">Facilities</a></li>
+            <li><a href="#membership" data-i18n="footer_link_membership">Membership</a></li>
+            <li><a href="#reviews" data-i18n="footer_link_reviews">Reviews</a></li>
+            <li><a href="#faq" data-i18n="footer_link_faq">FAQ</a></li>
+            <li><a href="#location" data-i18n="footer_link_location">Location</a></li>
           </ul>
         </div>
 
@@ -1293,15 +1114,13 @@
               <span class="contact-icon" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
               </span>
-              <span class="contact-text">
-                4C8R+5XC, Nizam Pura Rd, near Jamal Market, near City Hospital, Kot Murad Khan, Kasur, 55050
-              </span>
+              <span class="contact-text" data-i18n="footer_address">4C8R+5XC, Nizam Pura Rd, near Jamal Market, near City Hospital, Kot Murad Khan, Kasur, 55050</span>
             </li>
             <li class="contact-item">
               <span class="contact-icon" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
               </span>
-              <a href="tel:+923214670428" class="contact-link">+92 321 4670428</a>
+              <a href="tel:+923214670428" class="contact-link"><bdi dir="ltr">+92 321 4670428</bdi></a>
             </li>
             <li class="contact-item">
               <span class="contact-icon" aria-hidden="true">
@@ -1313,7 +1132,7 @@
               <span class="contact-icon" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
               </span>
-              <span class="contact-text">Open daily, closes 12 AM</span>
+              <span class="contact-text" data-i18n="footer_hours">Open daily, closes 12 AM</span>
             </li>
             <li class="contact-item">
               <span class="contact-icon" aria-hidden="true">
@@ -1326,8 +1145,8 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
               </span>
                             <div class="social-links-block">
-                <a href="https://www.facebook.com/p/WORLD-GYM-KASUR-100063909152676/" target="_blank" rel="noopener" class="contact-link">WORLD GYM KASUR</a>
-                <a href="https://www.facebook.com/p/WORLD-GYM-fitness-center-Kasur-61561379619501/" target="_blank" rel="noopener" class="contact-link">WORLD GYM fitness center Kasur</a>
+                <a href="https://www.facebook.com/p/WORLD-GYM-KASUR-100063909152676/" target="_blank" rel="noopener" class="contact-link"><bdi dir="ltr" data-i18n="footer_fb_1">Facebook: WORLD GYM KASUR</bdi></a> • 
+                <a href="https://www.facebook.com/p/WORLD-GYM-fitness-center-Kasur-61561379619501/" target="_blank" rel="noopener" class="contact-link"><bdi dir="ltr" data-i18n="footer_fb_2">WORLD GYM fitness center</bdi></a>
               </div>
             </li>
           </ul>
@@ -1350,7 +1169,7 @@
   </footer>
 
   <!-- Sticky Quick Call / WhatsApp / Join Float for Mobile -->
-  <aside class="mobile-sticky-bar" id="mobileStickyBar" aria-label="Quick contact links">
+  <aside class="mobile-sticky-bar bar-hidden" id="mobileStickyBar" aria-label="Quick contact links">
     <a href="tel:+923214670428" class="sticky-action sticky-action-call">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       <span data-i18n="sticky_call">Call</span>
@@ -1365,13 +1184,13 @@
   </aside>
 
   <!-- CDN Scripts: Lenis, GSAP, ScrollTrigger -->
-  <script src="main.min.js?v=14" defer></script>
+  <script src="main.min.js?v=24" defer></script>
   <!-- Lightbox Modal -->
   <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Photo preview lightbox" aria-hidden="true">
     <div class="lightbox-backdrop"></div>
     <div class="lightbox-content">
       <div class="lightbox-top-bar">
-        <span class="lightbox-counter" id="lightboxCounter">1 / 168</span>
+        <span class="lightbox-counter" id="lightboxCounter">1 / 56</span>
         <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close photo preview">✕</button>
       </div>
       <div class="lightbox-img-wrapper" id="lightboxImgWrapper">
